@@ -1,0 +1,3787 @@
+* {
+  box-sizing: border-box;
+}
+input[type=text], input[type=password], input[type=search]{
+  outline: 0px;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: fantasy;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 12px #7fad39;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7fad39;
+  border-radius: 5px;
+  height: 20px;
+}
+
+/* Center the loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  margin: -76px 0 0 -76px;
+  border: 5px solid orange;
+  border-radius: 50%;
+  border-top: 5px solid green;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+}
+.top{
+  height: 50px;
+  width: 100%;
+  font-size: 13px;
+  font-weight: bolder;
+  background-color: #f5f5f5;
+  padding: 8px 0px 5px 40px;
+  font-family: cursive;
+}
+.div1{
+  height: 30px;
+  width: 20%;
+  float: left;
+  padding: 3px 0px 0px 20px;
+  border-right: 2px solid grey;
+}
+.div2{
+  height: 30px;
+  width: 58%;
+  float: left;
+  padding: 3px 10px 0px 5px;
+  border-right: 2px solid grey;
+}
+.div3{
+  height: 30px;
+  width: 15%;
+  float: left;
+  padding: 3px 10px 0px 10px;
+  border-right: 2px solid grey;
+}
+.div4{
+  height: 30px;
+  width: 7%;
+  float: left;
+  padding: 3px 10px 0px 10px;
+}
+.nav {
+  height: 70px;
+  width: 100%;
+  padding: 0px 0px 0px 0px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: white;
+  margin-top: 10px;
+  width: 70%;
+  float: right;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/*.active {
+  background-color: #7fad39;
+  color: white;
+}*/
+
+.topnav .icon {
+  display: none;
+}
+
+.sdropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.sdropdown .sdropbtn {
+  font-size: 14px;    
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 20px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.item{
+  padding: 10px 0px 0px 0px;
+  margin: 0px 0px 0px 50px;
+}
+
+.sdropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.sdropdown-content a {
+  float: none;
+  color: white;
+  font-family: cursive;
+  font-size: 11px;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .sdropdown:hover .sdropbtn {
+  color: #7fad39;
+}
+
+.sdropdown-content a:hover {
+  color: #7fad39;
+}
+
+.sdropdown:hover .sdropdown-content {
+  display: block;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: black;
+  padding: 10px 0px 0px 0px;
+  margin-left: 55px;
+  float: left;
+}
+.nav > #nav-check {
+  display: none;
+}
+
+.section1{
+  height: 470px;
+  width: 25%;
+  float: left;
+  margin: 5px 0px 0px 60px;
+}
+.rec1{
+  height: 50px;
+  width: 100%;
+  padding: 13px 0px 0px 70px;
+  background-color: #7fad39;
+}
+.dropbtn {
+  background-color: #7fad39;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  border: none;
+  cursor: pointer;
+  word-spacing: 10px;
+}
+
+/*.dropbtn:hover, .dropbtn:focus {
+  background-color: #3e8e41;
+}*/
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  border: 0.5px solid grey;
+  min-width: 160px;
+  overflow: auto;
+  right: 0;
+}
+
+.dropdown-content a {
+  color: black;
+  font-family: cursive;
+  font-weight: bolder;
+  font-size: 13px;
+  padding: 11px 12px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover{
+  background-color: #7fad39;
+  color: white;
+}
+
+.show {display: block;}
+.section1i{
+  height: 85%; 
+  width: 100%; 
+  margin-top: 20px; 
+  padding-top: 50%;
+  line-height: 40px;
+  letter-spacing: 2px;
+  word-spacing: 0px;
+}
+.section2{
+  height: 50px;
+  width: 68%;
+  float: left;
+  margin: 5px 0px 0px 25px;
+  padding-top: 0px;
+}
+.searchcontainer{
+  height: 50px;
+  width: 55%;
+  border: 1px solid grey;
+  float: left;
+  padding: 0px 0px 0px 20px;
+}
+.dropdown2{
+  height: 25px;
+  width: 30%;
+  float: left;
+  border: none;
+  font-family: fantasy;
+  font-size: 18px;
+  margin-top: 10px;
+  border: none;
+  border-right: 1px solid grey;
+}
+.search{
+  height: 48px;
+  width: 67.5%;
+  float: left;
+  border: none;
+  font-family: cursive;
+  font-weight: bolder;
+  font-size: 15px;
+  margin-left: 8px;
+  outline: 0px;
+}
+.button{
+  height: 50px;
+  width: 11%;
+  float: left;
+  color: white;
+  font-family: fantasy;
+  font-size: 18px;
+  background-color: #7fad39;
+  border: none;
+}
+.phoneicon{
+  height: 50px;
+  width: 6%;
+  border-radius: 25px 25px 25px 25px;
+  float: left;
+  text-align: center;
+  color: #7fad39;
+  margin: 0px 0px 0px 50px;
+  padding: 14px 0px 5px 0px;
+  background-color: #f5f5f5;
+}
+.container{
+  height: 50px;
+  width: 20%;
+  float: right;
+  letter-spacing: 0px;
+  text-align: left;
+  margin: 0px 0px 0px 15px;
+  font-size: 19px;
+  padding: 5px 0px 0px 5px;
+}
+.contd{
+    font-size: 13px;
+  }
+.section3{
+  height: 400px;
+  width: 65%;
+  float: left;
+  margin: 20px 0px 0px 25px;
+}
+.img{
+  height: 400px;
+  width: 100%;
+}
+.clear{
+  clear: both;
+}
+
+/*Top Slide*/
+.slide{
+  height: 250px;
+  width: 95%;
+  margin: 45px 0px 80px 3%;
+}
+.mySlides {display: none;}
+.img1 {
+  vertical-align: middle;
+  height: 250px;
+  width: 23.7%; 
+  float: left; 
+  margin-left: 20px;
+}
+
+/* Slideshow container */
+.slidecontainer {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 0.5s;
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.recontainer{
+  height: 100%;
+  width: 92%;
+  margin: 0px 0px 0px 60px;
+}
+/*TABS*/
+  input[type=radio] { display: none; }                /* hide radio buttons */
+  input[type=radio] + label { display: inline-block } /* show labels in line */
+  input[type=radio] ~ .tab { display: none }          /* hide contents */
+  /* show contents only for selected tab */
+  #tab1:checked ~ .tab.content1,
+  #tab2:checked ~ .tab.content2,
+  #tab3:checked ~ .tab.content3,
+  #tab4:checked ~ .tab.content4,
+  #tab5:checked ~ .tab.content5 { display: block; }
+
+  input[type=radio] + label {             /* box with rounded corner */
+    padding: 0px 2% 0px 2%;
+    position: relative;
+    font-family: cursive;
+    font-size: 15px;
+    font-weight: bolder;
+    top: 1px;
+  }
+  input[type=radio]:checked + label {     /* white background for selected tab */
+    background: #FFF;
+/*    border-bottom: 1px solid transparent;
+*/  }
+  input[type=radio] ~ .tab {          /* grey line between tab and contents */
+/*    border-top: 1px solid #999;
+*/    padding: 12px;
+  }
+  .alltab{
+    margin-left: 26%;
+  }
+.rec2a{
+  height: 350px;
+  width: 23%;
+  float: left;
+  margin: 0px 20px 20px 70px;
+}
+.rec2a button {
+  height: 25px;
+  width: 50px;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  font-family: fantasy;
+  background-color: #7fad39;
+  border: none;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+.rec2a button:hover{
+  opacity: 0.85;
+}
+.rec2a a{
+  text-decoration: none;
+  color: white;
+}
+.rec3{
+  height: 270px;
+  width: 44.5%;
+  float: left;
+  margin: 50px 0px 30px 60px;
+}
+.rec4{
+  height: 270px;
+  width: 46%;
+  float: left;
+  margin: 50px 0px 30px 20px;
+}
+/*First Latest Product Slide*/
+.recslide1{
+  height: 445px;
+  width: 30%;
+  float: left;
+  margin: 40px 0px 50px 60px;
+}
+.recslide1a{
+  height: 380px;
+  width: 100%;
+  margin: 30px 0px 0px 0px;
+  padding: 0px;
+}
+
+.smySlides {display: none;}
+.simg1 {
+  vertical-align: middle;
+  height: 100px;
+  margin-right: 20px;
+}
+
+/* Slideshow container */
+.sslidecontainer {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.sactive {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.sfade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2.5s;
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/*Second Latest Product Slide*/
+.recslide2{
+  height: 445px;
+  width: 30%;
+  float: left;
+  margin: 40px 0px 50px 20px;
+}
+.recslide1b{
+  height: 380px;
+  width: 100%;
+  margin: 30px 0px 0px 0px;
+  padding: 0px;
+}
+
+.amySlides {display: none;}
+.aimg1 {
+vertical-align: middle;
+height: 100px;
+margin-right: 20px;
+}
+
+/* Slideshow container */
+.aslidecontainer {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.aactive {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.afade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2.5s;
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+/*Third Latest Product Slide*/
+.recslide3{
+  height: 445px;
+  width: 30%;
+  float: left;
+  margin: 40px 0px 50px 20px;
+}
+.recslide1c{
+  height: 380px;
+  width: 100%;
+  margin: 30px 0px 0px 0px;
+  padding: 0px;
+}
+
+.dmySlides {display: none;}
+.dimg1 {
+vertical-align: middle;
+height: 100px;
+margin-right: 20px;
+}
+
+/* Slideshow container */
+.dslidecontainer {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.dactive {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.dfade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2.5s;
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.boxA{
+  height: 420px;
+  width: 30%;
+  float: left;
+  margin: 20px 0px 100px 60px;
+}
+.boximg1{
+  height: 280px;
+  width: 100%;
+  margin: 0px 0px 20px 0px;
+}
+.boximg1 img{
+  height: 278px;
+  width: 100%;
+}
+.boxA1{
+  height: 160px;
+  width: 100%;
+}
+
+.boxB{
+  height: 420px;
+  width: 30%;
+  float: left;
+  margin: 20px 0px 0px 20px;
+}
+.boximg2{
+  height: 280px;
+  width: 100%;
+  margin: 0px 0px 20px 0px;
+}
+.boximg2 img{
+  height: 278px;
+  width: 100%;
+}
+.boxB1{
+  height: 160px;
+  width: 100%;
+}
+
+.boxC{
+  height: 420px;
+  width: 30%;
+  float: left;
+  margin: 20px 0px 0px 20px;
+}
+.boximg3{
+  height: 280px;
+  width: 100%;
+  margin: 0px 0px 20px 0px;
+}
+.boximg3 img{
+  height: 278px;
+  width: 100%;
+}
+.boxC1{
+  height: 160px;
+  width: 100%;
+}
+
+.footer{
+  height: 420px;
+  width: 100%;
+  margin-top: 20px;
+  font-family: cursive;
+  font-weight: bolder;
+  font-size: 13px;
+  background-color: #f5f5f5;
+}
+.box1{
+  height: 250px;
+  width: 30%;
+  margin: 70px 10px 0px 60px;
+  float: left;
+}
+.box2{
+  height: 250px;
+  width: 30%;
+  margin: 70px 10px 0px 0px;
+  float: left;
+}
+.box2a{
+  height: 150px;
+  width: 45%;
+  float: left;
+}
+.box2b{
+  height: 150px;
+  width: 45%;
+  float: left;
+}
+.box3{
+  height: 250px;
+  width: 30%;
+  margin: 70px 10px 0px 0px;
+  float: left;
+}
+.box3a{
+  height: 41px;
+  width: 10%;
+  background-color: white;
+  border-radius: 50%;
+  float: left;
+  margin: 12px 12px 0px 0px;
+  padding: 3%;
+  border: 0.5px solid lightgrey;
+}
+.box3a:hover{
+  background-color: #7fad39;
+  color: white;
+}
+.box4{
+  height: 50px;
+  width: 91%;
+  margin: 15px 0px 0px 60px;
+  float: left;
+  text-align: center; 
+  font-size: 15px; 
+  font-weight: bolder; 
+  font-family: cursive; 
+  border-top: 1px solid dimgrey;
+}
+
+
+@media screen and (max-width: 1240px) {
+  .top{
+    height: 40px;
+    width: 100%;
+    font-size: 11px;
+    font-weight: bolder;
+    background-color: #f5f5f5;
+    padding: 5px 0px 5px 0px;
+    font-family: cursive;
+  }
+  .div1{
+    height: 30px;
+    width: 20%;
+    float: left;
+    padding: 5px 0px 0px 0.5%;
+    border-right: 2px solid grey;
+  }
+  .div2{
+    height: 30px;
+    width: 58%;
+    float: left;
+    padding: 5px 0px 0px 0.5%;
+    border-right: 2px solid grey;
+  }
+  .div3{
+    height: 30px;
+    width: 15%;
+    float: left;
+    padding: 5px 0px 0px 0.5%;
+    border-right: 2px solid grey;
+  }
+  .div4{
+    height: 30px;
+    width: 7%;
+    float: left;
+    padding: 5px 0px 0px 1%;
+  }
+  .nav {
+    height: 55px;
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color: white;
+    margin: 5px 3% 0px 0%;
+    width: 70%;
+    float: right;
+  }
+
+  .topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  /*.active {
+    background-color: #7fad39;
+    color: white;
+  }*/
+
+  .topnav .icon {
+    display: none;
+  }
+
+  .sdropdown {
+    float: left;
+    overflow: hidden;
+  }
+
+  .sdropdown .sdropbtn {
+    font-size: 14px;    
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 20px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  .item{
+    padding: 10px 0px 0px 0px;
+    margin: 0px 0px 0px 50px;
+    display: none;
+  }
+
+  .sdropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .sdropdown-content a {
+    float: none;
+    color: white;
+    font-family: cursive;
+    font-size: 12px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .topnav a:hover, .sdropdown:hover .sdropbtn {
+    color: #7fad39;
+  }
+
+  .sdropdown-content a:hover {
+    color: #7fad39;
+  }
+
+  .sdropdown:hover .sdropdown-content {
+    display: block;
+  }
+
+  .nav > .nav-header {
+    display: inline;
+  }
+
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: black;
+    padding: 5px 0px 0px 0px;
+    margin-left: 0px;
+    float: left;
+  }
+  .nav > #nav-check {
+    display: none;
+  }
+
+  .section1{
+    height: 470px;
+    width: 25%;
+    float: left;
+    margin: 5px 0px 0px 0px;
+  }
+  .rec1{
+    height: 45px;
+    width: 100%;
+    padding: 13px 0px 0px 8%;
+    background-color: #7fad39;
+  }
+  .dropbtn {
+    background-color: #7fad39;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    border: none;
+    cursor: pointer;
+    word-spacing: 10px;
+  }
+
+  /*.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+  }*/
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 0.5px solid grey;
+    min-width: 160px;
+    overflow: auto;
+    right: 0;
+  }
+
+  .dropdown-content a {
+    color: black;
+    font-family: cursive;
+    font-weight: bolder;
+    font-size: 13px;
+    padding: 11px 12px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content a:hover{
+    background-color: #7fad39;
+    color: white;
+  }
+
+  .show {display: block;}
+  .section1i{
+    height: 85%; 
+    width: 100%; 
+    margin-top: 20px; 
+  }
+
+  .section2{
+    height: 45px;
+    width: 72%;
+    float: left;
+    margin: 5px 0px 0px 25px;
+    padding-top: 0px;
+  }
+  .searchcontainer{
+    height: 45px;
+    width: 55%;
+    border: 1px solid grey;
+    float: left;
+    padding: 0px 0px 0px 20px;
+  }
+  .dropdown2{
+    height: 25px;
+    width: 30%;
+    float: left;
+    border: none;
+    font-family: fantasy;
+    font-size: 18px;
+    margin-top: 10px;
+    border: none;
+    border-right: 1px solid grey;
+  }
+  .search{
+    height: 43px;
+    width: 67.5%;
+    float: left;
+    border: none;
+    font-family: cursive;
+    font-weight: bolder;
+    font-size: 14px;
+    margin-left: 8px;
+    outline: 0px;
+  }
+  .button{
+    height: 45px;
+    width: 10%;
+    float: left;
+    color: white;
+    font-family: fantasy;
+    font-size: 15px;
+    letter-spacing: 1px;
+    background-color: #7fad39;
+    border: none;
+  }
+  .phoneicon{
+    height: 45px;
+    width: 6%;
+    border-radius: 25px 25px 25px 25px;
+    float: left;
+    text-align: center;
+    color: #7fad39;
+    margin: 0px 0px 0px 7%;
+    padding: 14px 0px 5px 0px;
+    background-color: #f5f5f5;
+  }
+  .container{
+    height: 45px;
+    width: 20%;
+    float: right;
+    letter-spacing: 0px;
+    margin: 0px 0px 0px 2%;
+    font-size: 18px;
+    padding: 5px 0px 0px 5px;
+    text-align: center;
+  }
+  .contd{
+      font-size: 14px;
+    }
+  .section3{
+    height: 400px;
+    width: 65%;
+    float: left;
+    margin: 20px 0px 0px 25px;
+  }
+  .img{
+    height: 400px;
+    width: 100%;
+  }
+  .clear{
+    clear: both;
+  }
+
+  /*Top Slide*/
+  .slide{
+    height: 200px;
+    width: 100%;
+    margin: 45px 0px 80px 1%;
+  }
+  .mySlides {display: none;}
+  .img1 {
+    vertical-align: middle;
+    height: 200px;
+    width: 23%; 
+    float: left; 
+    margin-left: 20px;
+  }
+
+  /* Slideshow container */
+  .slidecontainer {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+  }
+
+  .active {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 0.5s;
+    animation-name: fade;
+    animation-duration: 0.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  .recontainer{
+    height: 100%;
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+  }
+  /*.rec2{
+    height: 80px;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0px 0px 0px;
+  }*/
+  input[type=radio] + label {             /* box with rounded corner */
+    padding: 0px 2% 0px 2%;
+    position: relative;
+    font-family: cursive;
+    font-size: 15px;
+    font-weight: bolder;
+    top: 1px;
+  }
+  .alltab{
+    margin-left: 26%;
+  }
+  .rec2 a{
+    font-family: cursive;
+    font-weight: bolder;
+    font-size: 17px;
+    text-decoration: none;
+    color: black;
+    margin: 5px 30px 0px 0px;
+  }
+  .rec2a{
+    height: 350px;
+    width: 23%;
+    float: left;
+    margin: 0px 20px 20px 6.5%;
+  }
+  .rec3{
+    height: 270px;
+    width: 47%;
+    float: left;
+    margin: 50px 0px 30px 2%;
+  }
+  .rec4{
+    height: 270px;
+    width: 47%;
+    float: left;
+    margin: 50px 0px 30px 2%;
+  }
+  /*First Latest Product Slide*/
+  .recslide1{
+    height: 445px;
+    width: 30%;
+    float: left;
+    margin: 40px 0px 50px 1.8%;
+  }
+  .recslide1a{
+    height: 380px;
+    width: 100%;
+    margin: 30px 0px 0px 0px;
+    padding: 0px;
+  }
+
+  .smySlides {display: none;}
+  .simg1 {
+    vertical-align: middle;
+    height: 100px;
+    margin-right: 20px;
+  }
+
+  /* Slideshow container */
+  .sslidecontainer {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+  }
+
+  .sactive {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .sfade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2.5s;
+    animation-name: fade;
+    animation-duration: 2.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  /*Second Latest Product Slide*/
+  .recslide2{
+    height: 445px;
+    width: 31%;
+    float: left;
+    margin: 40px 0px 50px 0.5%;
+  }
+  .recslide1b{
+    height: 380px;
+    width: 100%;
+    margin: 30px 0px 0px 0px;
+    padding: 0px;
+  }
+
+  .amySlides {display: none;}
+  .aimg1 {
+    vertical-align: middle;
+    height: 100px;
+    margin-right: 20px;
+  }
+
+  /* Slideshow container */
+  .aslidecontainer {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+  }
+
+  .aactive {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .afade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2.5s;
+    animation-name: fade;
+    animation-duration: 2.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+
+  /*Third Latest Product Slide*/
+  .recslide3{
+    height: 445px;
+    width: 33%;
+    float: left;
+    margin: 40px 0px 50px 20px;
+  }
+  .recslide1c{
+    height: 380px;
+    width: 100%;
+    margin: 30px 0px 0px 0px;
+    padding: 0px;
+  }
+
+  .dmySlides {display: none;}
+  .dimg1 {
+    vertical-align: middle;
+    height: 100px;
+    margin-right: 20px;
+  }
+
+  /* Slideshow container */
+  .dslidecontainer {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+  }
+
+  .dactive {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .dfade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2.5s;
+    animation-name: fade;
+    animation-duration: 2.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  .boxA{
+    height: 420px;
+    width: 30%;
+    float: left;
+    margin: 70px 0px 100px 3%;
+  }
+  .boximg1{
+    height: 280px;
+    width: 100%;
+    margin: 0px 0px 20px 0px;
+  }
+  .boximg1 img{
+    height: 278px;
+    width: 100%;
+  }
+  .boxA1{
+    height: 160px;
+    width: 100%;
+  }
+
+  .boxB{
+    height: 420px;
+    width: 30%;
+    float: left;
+    margin: 70px 0px 0px 20px;
+  }
+  .boximg2{
+    height: 280px;
+    width: 100%;
+    margin: 0px 0px 20px 0px;
+  }
+  .boximg2 img{
+    height: 278px;
+    width: 100%;
+  }
+  .boxB1{
+    height: 160px;
+    width: 100%;
+  }
+
+  .boxC{
+    height: 420px;
+    width: 30%;
+    float: left;
+    margin: 70px 0px 0px 20px;
+  }
+  .boximg3{
+    height: 280px;
+    width: 100%;
+    margin: 0px 0px 20px 0px;
+  }
+  .boximg3 img{
+    height: 278px;
+    width: 100%;
+  }
+  .boxC1{
+    height: 160px;
+    width: 100%;
+  }
+
+  .footer{
+    height: 420px;
+    width: 100%;
+    margin-top: 50px;
+    font-family: cursive;
+    font-weight: bolder;
+    font-size: 13px;
+    background-color: #f5f5f5;
+  }
+  .box1{
+    height: 250px;
+    width: 28%;
+    margin: 70px 10px 0px 1.5%;
+    float: left;
+  }
+  .box2{
+    height: 250px;
+    width: 28%;
+    margin: 70px 10px 0px 0px;
+    float: left;
+  }
+  .box2a{
+    height: 150px;
+    width: 45%;
+    float: left;
+  }
+  .box2b{
+    height: 150px;
+    width: 45%;
+    float: left;
+  }
+  .box3{
+    height: 250px;
+    width: 38%;
+    margin: 70px 0px 0px 0px;
+    float: left;
+  }
+  .box3a{
+    height: 41px;
+    width: 10%;
+    background-color: white;
+    border-radius: 50%;
+    float: left;
+    margin: 12px 12px 0px 0px;
+    padding: 3%;
+    border: 0.5px solid lightgrey;
+  }
+  .box3a:hover{
+    background-color: #7fad39;
+    color: white;
+  }
+  .box4{
+    height: 50px;
+    width: 95%;
+    margin: 15px 0px 0px 2%;
+    float: left;
+    text-align: center; 
+    font-size: 15px; 
+    font-weight: bolder; 
+    font-family: cursive; 
+    border-top: 1px solid dimgrey;
+  }
+
+}
+
+@media screen and (max-width: 1024px) {
+  .top{
+    height: 50px;
+    width: 100%;
+    font-size: 13px;
+    font-weight: bolder;
+    background-color: #f5f5f5;
+    padding: 8px 0px 5px 40px;
+    font-family: cursive;
+    display: none;
+  }
+  .div1{
+    height: 30px;
+    width: 20%;
+    float: left;
+    border-right: 2px solid grey;
+  }
+  .div2{
+    height: 30px;
+    width: 56%;
+    float: left;
+    border-right: 2px solid grey;
+  }
+  .div3{
+    height: 30px;
+    width: 15%;
+    float: left;
+    border-right: 2px solid grey;
+  }
+  .div4{
+    height: 30px;
+    width: 7%;
+    float: left;
+  }
+
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: black;
+    padding: 10px 0px 0px 0px;
+    margin: 0px;
+    float: left;
+  }
+
+  .topnav a:not(:first-child), .sdropdown .sdropbtn {
+    display: none;
+    background-color: rgba(0,0,0,0.8);
+  }
+  .topnav a.icon {
+    color: white;
+    float: right;
+    display: block;
+  }
+  .topnav.responsive {position: sticky;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    color: white;
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive a:hover{
+    color: #7fad39;
+  }
+  .topnav.responsive .sdropdown {float: none;}
+  .topnav.responsive .sdropdown-content {position: relative;}
+  .topnav.responsive .sdropdown .sdropbtn {
+    display: block;
+    color: white;
+    width: 100%;
+    text-align: left;
+  }
+  .topnav.responsive .sdropdown .sdropbtn:hover{
+    color: #7fad39;
+  }
+  .topnav.responsive .sdropdown-content a{
+    position: relative;
+    font-weight: bolder;
+    font-size: 13px;
+  }
+  .topnav.responsive .sdropdown-content a:hover{
+    background-color: #7fad39;
+    color: white;
+  }
+  .item{
+    display: none;
+  }
+
+  .section1{
+    height: 50px;
+    width: 100%;
+    float: left;
+    margin: 5px 0px 0px 0px;
+  }
+  .rec1{
+    height: 50px;
+    width: 100%;
+    padding: 13px 0px 0px 10px;
+    background-color: #7fad39;
+  }
+  .dropbtn {
+    background-color: #7fad39;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    border: none;
+    cursor: pointer;
+    word-spacing: 10px;
+  }
+
+  /*.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+  }*/
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 0.5px solid grey;
+    min-width: 160px;
+    overflow: auto;
+    right: 0;
+  }
+
+  .dropdown-content a {
+    color: black;
+    font-family: cursive;
+    font-weight: bolder;
+    font-size: 13px;
+    padding: 11px 12px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .show {display: block;}
+  .section1i{
+    height: 85%; 
+    width: 100%; 
+    margin-top: 20px; 
+    border: 1px solid orange;
+    display: none;
+  }
+
+  .section2{
+    height: 50px;
+    width: 100%;
+    float: left;
+    margin: 20px 0px 0px 0px;
+    padding-top: 0px;
+  }
+  .searchcontainer{
+    height: 50px;
+    width: 54%;
+    border: 1px solid grey;
+    float: left;
+    padding: 0px 0px 0px 0px;
+  }
+  .dropdown2{
+    height: 25px;
+    width: 30%;
+    float: left;
+    border: none;
+    font-weight: bolder;
+    font-family: cursive;
+    font-size: 15px;
+    margin-top: 10px;
+    border: none;
+    border-right: 1px solid grey;
+  }
+  .search{
+    height: 48px;
+    width: 65%;
+    float: left;
+    border: none;
+    font-family: cursive;
+    font-weight: bolder;
+    font-size: 15px;
+    margin-left: 8px;
+  }
+  .button{
+    height: 50px;
+    width: 14%;
+    float: left;
+    letter-spacing: 1.5px;
+    color: white;
+    font-family: fantasy;
+    font-size: 15px;
+    background-color: #7fad39;
+    border: none;
+  }
+  .phoneicon{
+    height: 50px;
+    width: 5.5%;
+    border-radius: 25px 25px 25px 25px;
+    float: left;
+    text-align: center;
+    color: #7fad39;
+    margin: 0px 0px 0px 7%;
+    padding: 14px 0px 5px 0px;
+    background-color: #f5f5f5;
+  }
+  .container{
+    height: 50px;
+    width: 19%;
+    float: right;
+    letter-spacing: 0px;
+    margin: 0px 0px 0px 0px;
+    font-size: 18px;
+    padding: 5px 0px 0px 0px;
+    text-align: center;
+  }
+  .contd{
+    font-size: 15px;
+  }
+  .section3{
+    height: 300px;
+    width: 100%;
+    float: left;
+    margin: 20px 0px 0px 0px;
+  }
+  .img{
+    height: 100%;
+    width: 100%;
+  }
+
+  .slide{
+    height: 120px;
+    width: 100%;
+    margin: 80px 0px 15% 0px;
+  }
+  .mySlides {
+    display: none;
+    height: 100%;
+  }
+  .img1 {
+    vertical-align: middle;
+    height: 100%;
+    width: 23.5%; 
+    float: left; 
+    margin-left: 15px;
+  }
+
+  /* Slideshow container */
+  .slidecontainer {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+  }
+
+  .active {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 0.5s;
+    animation-name: fade;
+    animation-duration: 0.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  .recontainer{
+    height: 100%;
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+  }
+  input[type=radio] + label {
+    padding: 0px 2% 0px 2%;
+    position: relative;
+    font-family: cursive;
+    font-size: 15px;
+    font-weight: bolder;
+    top: 1px;
+  }
+  .alltab{
+    margin-left: 20%;
+  }
+  .rec2a{
+    height: 300px;
+    width: 45%;
+    float: left;
+    margin: 0px 0px 20px 3%;
+  }
+  .rec3{
+    height: 270px;
+    width: 44.5%;
+    float: left;
+    margin: 50px 0px 30px 60px;
+    display: none;
+  }
+  .rec4{
+    height: 270px;
+    width: 46%;
+    float: left;
+    margin: 50px 0px 30px 20px;
+    display: none;
+  }
+
+  /*First Latest Product Slide*/
+  .recslide1{
+    height: 445px;
+    width: 49%;
+    float: left;
+    margin: 40px 0px 50px 0px;
+  }
+  .recslide1a{
+    height: 380px;
+    width: 100%;
+    margin: 30px 0px 0px 0px;
+    padding: 0px;
+  }
+
+  .smySlides {display: none;}
+  .simg1 {
+    vertical-align: middle;
+    height: 100px;
+    margin-right: 20px;
+  }
+
+  /* Slideshow container */
+  .sslidecontainer {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+  }
+
+  .sactive {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .sfade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2.5s;
+    animation-name: fade;
+    animation-duration: 2.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  /*Second Latest Product Slide*/
+  .recslide2{
+    height: 445px;
+    width: 50%;
+    float: left;
+    margin: 40px 0px 50px 5px;
+  }
+  .recslide1b{
+    height: 380px;
+    width: 100%;
+    margin: 30px 0px 0px 0px;
+    padding: 0px;
+  }
+
+  .amySlides {display: none;}
+  .aimg1 {
+  vertical-align: middle;
+  height: 100px;
+  margin-right: 20px;
+  }
+
+  /* Slideshow container */
+  .aslidecontainer {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+  }
+
+  .aactive {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .afade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2.5s;
+    animation-name: fade;
+    animation-duration: 2.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  /*Third Latest Product Slide*/
+  .recslide3{
+    height: 445px;
+    width: 100%;
+    float: left;
+    margin: 40px 0px 50px 60px;
+    display: none;
+  }
+  .recslide1c{
+    height: 380px;
+    width: 100%;
+    margin: 30px 0px 0px 0px;
+    padding: 0px;
+  }
+
+  .dmySlides {display: none;}
+  .dimg1 {
+  vertical-align: middle;
+  height: 100px;
+  margin-right: 20px;
+  }
+
+  /* Slideshow container */
+  .dslidecontainer {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+  }
+
+  .dactive {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .dfade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2.5s;
+    animation-name: fade;
+    animation-duration: 2.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  .boxA{
+    height: 300px;
+    width: 48%;
+    float: left;
+    margin: 20px 0px 50px 5px;
+  }
+  .boximg1{
+    height: 140px;
+    width: 100%;
+    margin: 0px 0px 20px 0px;
+  }
+  .boximg1 img{
+    height: 100%;
+    width: 100%;
+  }
+  .boxA1{
+    height: 160px;
+    width: 100%;
+  }
+
+  .boxB{
+    height: 300px;
+    width: 48%;
+    float: left;
+    margin: 20px 0px 50px 20px;
+  }
+  .boximg2{
+    height: 140px;
+    width: 100%;
+    margin: 0px 0px 20px 0px;
+  }
+  .boximg2 img{
+    height: 100%;
+    width: 100%;
+  }
+  .boxB1{
+    height: 160px;
+    width: 100%;
+  }
+
+  .boxC{
+    height: 300px;
+    width: 85%;
+    float: left;
+    margin: 0px 0px 50px 8%;
+  }
+  .boximg3{
+    height: 140px;
+    width: 100%;
+    margin: 0px 0px 20px 0px;
+  }
+  .boximg3 img{
+    height: 100%;
+    width: 100%;
+  }
+  .boxC1{
+    height: 160px;
+    width: 100%;
+  }
+
+  .footer{
+    height: 900px;
+    width: 100%;
+    margin-top: 50px;
+    font-family: cursive;
+    font-weight: bolder;
+    font-size: 13px;
+    background-color: #f5f5f5;
+  }
+  .box1{
+    height: 250px;
+    width: 85%;
+    margin: 70px 10px 0px 15%;
+    float: left;
+  }
+  .box2{
+    height: 250px;
+    width: 85%;
+    margin: 0px 10px 0px 15%;
+    float: left;
+  }
+  .box2a{
+    height: 150px;
+    width: 45%;
+    float: left;
+  }
+  .box2b{
+    height: 150px;
+    width: 45%;
+    float: left;
+  }
+  .box3{
+    height: 250px;
+    width: 85%;
+    margin: 0px 10px 0px 15%;
+    float: left;
+  }
+  .box3a{
+    height: 40px;
+    width: 5%;
+    background-color: white;
+    border-radius: 50%;
+    float: left;
+    margin: 12px 12px 0px 0px;
+    padding: 1.5%;
+/*    padding-left: 16px;
+*/    border: 0.5px solid lightgrey;
+  }
+  .box3a:hover{
+    background-color: #7fad39;
+    color: white;
+  }
+  .box4{
+    height: 50px;
+    width: 85%;
+    margin: 15px 0px 0px 40px;
+    float: left;
+    text-align: center; 
+    font-size: 12px; 
+    font-weight: bolder; 
+    font-family: cursive; 
+    border-top: 1px solid dimgrey;
+  }
+
+}
+
+
+@media screen and (max-width: 768px) {
+  .top{
+    height: 50px;
+    width: 100%;
+    font-size: 13px;
+    font-weight: bolder;
+    background-color: #f5f5f5;
+    padding: 8px 0px 5px 40px;
+    font-family: cursive;
+    display: none;
+  }
+  .div1{
+    height: 30px;
+    width: 20%;
+    float: left;
+    border-right: 2px solid grey;
+  }
+  .div2{
+    height: 30px;
+    width: 56%;
+    float: left;
+    border-right: 2px solid grey;
+  }
+  .div3{
+    height: 30px;
+    width: 15%;
+    float: left;
+    border-right: 2px solid grey;
+  }
+  .div4{
+    height: 30px;
+    width: 7%;
+    float: left;
+  }
+
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: black;
+    padding: 10px 0px 0px 0px;
+    margin: 0px;
+    float: left;
+  }
+
+  .topnav a:not(:first-child), .sdropdown .sdropbtn {
+    display: none;
+    background-color: rgba(0,0,0,0.8);
+  }
+  .topnav a.icon {
+    color: white;
+    float: right;
+    display: block;
+  }
+  .topnav.responsive {position: sticky;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    color: white;
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive a:hover{
+    color: #7fad39;
+  }
+  .topnav.responsive .sdropdown {float: none;}
+  .topnav.responsive .sdropdown-content {position: relative;}
+  .topnav.responsive .sdropdown .sdropbtn {
+    display: block;
+    color: white;
+    width: 100%;
+    text-align: left;
+  }
+  .topnav.responsive .sdropdown .sdropbtn:hover{
+    color: #7fad39;
+  }
+  .topnav.responsive .sdropdown-content a{
+    position: relative;
+    font-weight: bolder;
+    font-size: 13px;
+  }
+  .topnav.responsive .sdropdown-content a:hover{
+    background-color: #7fad39;
+    color: white;
+  }
+  .item{
+    display: none;
+  }
+
+  .section1{
+    height: 50px;
+    width: 100%;
+    float: left;
+    margin: 5px 0px 0px 0px;
+  }
+  .rec1{
+    height: 50px;
+    width: 100%;
+    padding: 13px 0px 0px 10px;
+    background-color: #7fad39;
+  }
+  .dropbtn {
+    background-color: #7fad39;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    border: none;
+    cursor: pointer;
+    word-spacing: 10px;
+  }
+
+  /*.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+  }*/
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 0.5px solid grey;
+    min-width: 160px;
+    overflow: auto;
+    right: 0;
+  }
+
+  .dropdown-content a {
+    color: black;
+    font-family: cursive;
+    font-weight: bolder;
+    font-size: 13px;
+    padding: 11px 12px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .show {display: block;}
+  .section1i{
+    height: 85%; 
+    width: 100%; 
+    margin-top: 20px; 
+    border: 1px solid orange;
+    display: none;
+  }
+
+  .section2{
+    height: 50px;
+    width: 100%;
+    float: left;
+    margin: 30px 0px 0px 0px;
+    padding-top: 0px;
+  }
+  .searchcontainer{
+    height: 50px;
+    width: 52%;
+    border: 1px solid grey;
+    float: left;
+    padding: 0px 0px 0px 0px;
+  }
+  .dropdown2{
+    height: 25px;
+    width: 30%;
+    float: left;
+    border: none;
+    font-weight: bolder;
+    font-family: cursive;
+    font-size: 15px;
+    margin-top: 10px;
+    border: none;
+    border-right: 1px solid grey;
+  }
+  .search{
+    height: 48px;
+    width: 65%;
+    float: left;
+    border: none;
+    font-family: cursive;
+    font-weight: bolder;
+    font-size: 15px;
+    margin-left: 8px;
+  }
+  .button{
+    height: 50px;
+    width: 14%;
+    float: left;
+    letter-spacing: 1.5px;
+    color: white;
+    font-family: fantasy;
+    font-size: 15px;
+    background-color: #7fad39;
+    border: none;
+  }
+  .phoneicon{
+    height: 50px;
+    width: 8%;
+    border-radius: 25px 25px 25px 25px;
+    float: left;
+    text-align: center;
+    color: #7fad39;
+    margin: 0px 0px 0px 5%;
+    padding: 14px 0px 5px 0px;
+    background-color: #f5f5f5;
+  }
+  .container{
+    height: 50px;
+    width: 21%;
+    float: right;
+    letter-spacing: 0px;
+    margin: 0px 0px 0px 0px;
+    font-size: 16px;
+    padding: 5px 0px 0px 0px;
+    text-align: center;
+  }
+  .contd{
+    font-size: 11px;
+  }
+  .section3{
+    height: 300px;
+    width: 100%;
+    float: left;
+    margin: 20px 0px 0px 0px;
+  }
+  .img{
+    height: 100%;
+    width: 100%;
+  }
+
+  .slide{
+    height: 120px;
+    width: 100%;
+    margin: 80px 0px 15% 0px;
+  }
+  .mySlides {
+    display: none;
+    height: 100%;
+  }
+  .img1 {
+    vertical-align: middle;
+    height: 100%;
+    width: 22.6%; 
+    float: left; 
+    margin-left: 15px;
+  }
+
+  /* Slideshow container */
+  .slidecontainer {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+  }
+
+  .active {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 0.5s;
+    animation-name: fade;
+    animation-duration: 0.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  .recontainer{
+    height: 100%;
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+  }
+  input[type=radio] + label {
+    padding: 0px 2% 0px 2%;
+    position: relative;
+    font-family: cursive;
+    font-size: 15px;
+    font-weight: bolder;
+    top: 1px;
+  }
+  .alltab{
+    margin-left: 15%;
+  }
+  .rec2a{
+    height: 300px;
+    width: 45%;
+    float: left;
+    margin: 0px 0px 20px 3%;
+  }
+  .rec3{
+    height: 270px;
+    width: 44.5%;
+    float: left;
+    margin: 50px 0px 30px 60px;
+    display: none;
+  }
+  .rec4{
+    height: 270px;
+    width: 46%;
+    float: left;
+    margin: 50px 0px 30px 20px;
+    display: none;
+  }
+
+  /*First Latest Product Slide*/
+  .recslide1{
+    height: 445px;
+    width: 100%;
+    float: left;
+    margin: 40px 0px 50px 25%;
+  }
+  .recslide1a{
+    height: 380px;
+    width: 100%;
+    margin: 30px 0px 0px 0px;
+    padding: 0px;
+  }
+
+  .smySlides {display: none;}
+  .simg1 {
+    vertical-align: middle;
+    height: 100px;
+    margin-right: 20px;
+  }
+
+  /* Slideshow container */
+  .sslidecontainer {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+  }
+
+  .sactive {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .sfade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2.5s;
+    animation-name: fade;
+    animation-duration: 2.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  /*Second Latest Product Slide*/
+  .recslide2{
+    height: 445px;
+    width: 100%;
+    float: left;
+    margin: 40px 0px 50px 60px;
+    display: none;
+  }
+  .recslide1b{
+    height: 380px;
+    width: 100%;
+    margin: 30px 0px 0px 0px;
+    padding: 0px;
+  }
+
+  .amySlides {display: none;}
+  .aimg1 {
+  vertical-align: middle;
+  height: 100px;
+  margin-right: 20px;
+  }
+
+  /* Slideshow container */
+  .aslidecontainer {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+  }
+
+  .aactive {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .afade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2.5s;
+    animation-name: fade;
+    animation-duration: 2.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  /*Third Latest Product Slide*/
+  .recslide3{
+    height: 445px;
+    width: 100%;
+    float: left;
+    margin: 40px 0px 50px 60px;
+    display: none;
+  }
+  .recslide1c{
+    height: 380px;
+    width: 100%;
+    margin: 30px 0px 0px 0px;
+    padding: 0px;
+  }
+
+  .dmySlides {display: none;}
+  .dimg1 {
+  vertical-align: middle;
+  height: 100px;
+  margin-right: 20px;
+  }
+
+  /* Slideshow container */
+  .dslidecontainer {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+  }
+
+  .dactive {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .dfade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2.5s;
+    animation-name: fade;
+    animation-duration: 2.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  .boxA{
+    height: 300px;
+    width: 85%;
+    float: left;
+    margin: 20px 0px 50px 8%;
+  }
+  .boximg1{
+    height: 140px;
+    width: 100%;
+    margin: 0px 0px 20px 0px;
+  }
+  .boximg1 img{
+    height: 100%;
+    width: 100%;
+  }
+  .boxA1{
+    height: 160px;
+    width: 100%;
+  }
+
+  .boxB{
+    height: 300px;
+    width: 85%;
+    float: left;
+    margin: 0px 0px 50px 8%;
+  }
+  .boximg2{
+    height: 140px;
+    width: 100%;
+    margin: 0px 0px 20px 0px;
+  }
+  .boximg2 img{
+    height: 100%;
+    width: 100%;
+  }
+  .boxB1{
+    height: 160px;
+    width: 100%;
+  }
+
+  .boxC{
+    height: 300px;
+    width: 85%;
+    float: left;
+    margin: 0px 0px 50px 8%;
+  }
+  .boximg3{
+    height: 140px;
+    width: 100%;
+    margin: 0px 0px 20px 0px;
+  }
+  .boximg3 img{
+    height: 100%;
+    width: 100%;
+  }
+  .boxC1{
+    height: 160px;
+    width: 100%;
+  }
+
+  .footer{
+    height: 900px;
+    width: 100%;
+    margin-top: 50px;
+    font-family: cursive;
+    font-weight: bolder;
+    font-size: 13px;
+    background-color: #f5f5f5;
+  }
+  .box1{
+    height: 250px;
+    width: 85%;
+    margin: 70px 10px 0px 15%;
+    float: left;
+  }
+  .box2{
+    height: 250px;
+    width: 85%;
+    margin: 0px 10px 0px 15%;
+    float: left;
+  }
+  .box2a{
+    height: 150px;
+    width: 45%;
+    float: left;
+  }
+  .box2b{
+    height: 150px;
+    width: 45%;
+    float: left;
+  }
+  .box3{
+    height: 250px;
+    width: 85%;
+    margin: 0px 10px 0px 15%;
+    float: left;
+  }
+  .box3a{
+    height: 40px;
+    width: 7%;
+    background-color: white;
+    border-radius: 50%;
+    float: left;
+    margin: 12px 12px 0px 0px;
+    padding: 2%;
+    padding-left: 16px;
+    border: 0.5px solid lightgrey;
+  }
+  .box3a:hover{
+    background-color: #7fad39;
+    color: white;
+  }
+  .box4{
+    height: 50px;
+    width: 85%;
+    margin: 15px 0px 0px 40px;
+    float: left;
+    text-align: center; 
+    font-size: 12px; 
+    font-weight: bolder; 
+    font-family: cursive; 
+    border-top: 1px solid dimgrey;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  .top{
+    height: 50px;
+    width: 100%;
+    font-size: 13px;
+    font-weight: bolder;
+    background-color: #f5f5f5;
+    padding: 8px 0px 5px 40px;
+    font-family: cursive;
+    display: none;
+  }
+  .div1{
+    height: 30px;
+    width: 20%;
+    float: left;
+    border-right: 2px solid grey;
+  }
+  .div2{
+    height: 30px;
+    width: 56%;
+    float: left;
+    border-right: 2px solid grey;
+  }
+  .div3{
+    height: 30px;
+    width: 15%;
+    float: left;
+    border-right: 2px solid grey;
+  }
+  .div4{
+    height: 30px;
+    width: 7%;
+    float: left;
+  }
+
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: black;
+    padding: 0px 0px 0px 0px;
+    margin: 0px;
+    float: left;
+  }
+
+  .topnav a:not(:first-child), .sdropdown .sdropbtn {
+    display: none;
+    background-color: rgba(0,0,0,0.8);
+  }
+  .topnav a.icon {
+    color: white;
+    float: right;
+    display: block;
+  }
+  .topnav.responsive {position: sticky;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    color: white;
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive a:hover{
+    color: #7fad39;
+  }
+  .topnav.responsive .sdropdown {float: none;}
+  .topnav.responsive .sdropdown-content {position: relative;}
+  .topnav.responsive .sdropdown .sdropbtn {
+    display: block;
+    color: white;
+    width: 100%;
+    text-align: left;
+  }
+  .topnav.responsive .sdropdown .sdropbtn:hover{
+    color: #7fad39;
+  }
+  .topnav.responsive .sdropdown-content a{
+    position: relative;
+    font-weight: bolder;
+    font-size: 13px;
+  }
+  .topnav.responsive .sdropdown-content a:hover{
+    background-color: #7fad39;
+    color: white;
+  }
+  .item{
+    display: none;
+  }
+
+  .section1{
+    height: 50px;
+    width: 100%;
+    float: left;
+    margin: 5px 0px 0px 0px;
+  }
+  .rec1{
+    height: 50px;
+    width: 100%;
+    padding: 13px 0px 0px 10px;
+    background-color: #7fad39;
+  }
+  .dropbtn {
+    background-color: #7fad39;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    border: none;
+    cursor: pointer;
+    word-spacing: 10px;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 0.5px solid grey;
+    min-width: 160px;
+    overflow: auto;
+    right: 0;
+  }
+
+  .dropdown-content a {
+    color: black;
+    font-family: cursive;
+    font-weight: bolder;
+    font-size: 13px;
+    padding: 11px 12px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .show {display: block;}
+  .section1i{
+    height: 85%; 
+    width: 100%; 
+    margin-top: 20px; 
+    border: 1px solid orange;
+    display: none;
+  }
+
+  .section2{
+    height: 100px;
+    width: 100%;
+    float: left;
+    margin: 20px 0px 0px 0px;
+    padding-top: 0px;
+  }
+  .searchcontainer{
+    height: 50px;
+    width: 80%;
+    border: 1px solid grey;
+    float: left;
+    padding: 0px 0px 0px 0px;
+  }
+  .dropdown2{
+    height: 25px;
+    width: 30%;
+    float: left;
+    border: none;
+    font-weight: bolder;
+    font-family: cursive;
+    font-size: 15px;
+    margin-top: 10px;
+    border: none;
+    border-right: 1px solid grey;
+  }
+  .search{
+    height: 48px;
+    width: 65%;
+    float: left;
+    border: none;
+    font-family: cursive;
+    font-weight: bolder;
+    font-size: 12px;
+    margin-left: 8px;
+  }
+  .button{
+    height: 50px;
+    width: 20%;
+    float: left;
+    letter-spacing: 1.5px;
+    color: white;
+    font-family: fantasy;
+    font-size: 13px;
+    background-color: #7fad39;
+    border: none;
+  }
+  .phoneicon{
+    height: 40px;
+    width: 8%;
+    border-radius: 25px 25px 25px 25px;
+    float: left;
+    text-align: center;
+    color: #7fad39;
+    margin: 5px 0px 0px 30%;
+    padding: 10px 0px 5px 0px;
+    background-color: #f5f5f5;
+  }
+  .container{
+    height: 50px;
+    width: 25%;
+    float: right;
+    letter-spacing: 0px;
+    margin: 0px 35% 0px 5px;
+    font-size: 13px;
+    padding: 5px 0px 0px 0px;
+    text-align: center;
+  }
+  .contd{
+    font-size: 11px;
+  }
+  .section3{
+    height: 300px;
+    width: 100%;
+    float: left;
+    margin: 20px 0px 0px 0px;
+  }
+  .img{
+    height: 100%;
+    width: 100%;
+  }
+
+  .slide{
+    height: 120px;
+    width: 100%;
+    margin: 50px 0px 80px 0px;
+  }
+  .mySlides {
+    display: none;
+    height: 100%;
+  }
+  .img1 {
+    vertical-align: middle;
+    height: 100%;
+    width: 22.5%; 
+    float: left; 
+    margin-left: 3%;
+  }
+
+  /* Slideshow container */
+  .slidecontainer {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+  }
+
+  .active {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 0.5s;
+    animation-name: fade;
+    animation-duration: 0.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  .recontainer{
+    height: 100%;
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+  }
+  input[type=radio] + label {
+    padding: 0px 3% 0px 2%;
+    position: relative;
+    font-family: cursive;
+    font-size: 15px;
+    font-weight: bolder;
+    top: 1px;
+  }
+  .alltab{
+    margin-left: 5%;
+  }
+  .rec2a{
+    height: 320px;
+    width: 70%;
+    float: left;
+    margin: 0px 0px 20px 70px;
+  }
+  .rec3{
+    height: 270px;
+    width: 44.5%;
+    float: left;
+    margin: 50px 0px 30px 60px;
+    display: none;
+  }
+  .rec4{
+    height: 270px;
+    width: 46%;
+    float: left;
+    margin: 50px 0px 30px 20px;
+    display: none;
+  }
+
+  /*First Latest Product Slide*/
+  .recslide1{
+    height: 445px;
+    width: 100%;
+    float: left;
+    margin: 40px 0px 50px 60px;
+  }
+  .recslide1a{
+    height: 380px;
+    width: 100%;
+    margin: 30px 0px 0px 0px;
+    padding: 0px;
+  }
+
+  .smySlides {display: none;}
+  .simg1 {
+    vertical-align: middle;
+    height: 100px;
+    margin-right: 20px;
+  }
+
+  /* Slideshow container */
+  .sslidecontainer {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+  }
+
+  .sactive {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .sfade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2.5s;
+    animation-name: fade;
+    animation-duration: 2.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  /*Second Latest Product Slide*/
+  .recslide2{
+    height: 445px;
+    width: 100%;
+    float: left;
+    margin: 40px 0px 50px 60px;
+    display: none;
+  }
+  .recslide1b{
+    height: 380px;
+    width: 100%;
+    margin: 30px 0px 0px 0px;
+    padding: 0px;
+  }
+
+  .amySlides {display: none;}
+  .aimg1 {
+  vertical-align: middle;
+  height: 100px;
+  margin-right: 20px;
+  }
+
+  /* Slideshow container */
+  .aslidecontainer {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+  }
+
+  .aactive {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .afade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2.5s;
+    animation-name: fade;
+    animation-duration: 2.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  /*Third Latest Product Slide*/
+  .recslide3{
+    height: 445px;
+    width: 100%;
+    float: left;
+    margin: 40px 0px 50px 60px;
+    display: none;
+  }
+  .recslide1c{
+    height: 380px;
+    width: 100%;
+    margin: 30px 0px 0px 0px;
+    padding: 0px;
+  }
+
+  .dmySlides {display: none;}
+  .dimg1 {
+  vertical-align: middle;
+  height: 100px;
+  margin-right: 20px;
+  }
+
+  /* Slideshow container */
+  .dslidecontainer {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+  }
+
+  .dactive {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .dfade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2.5s;
+    animation-name: fade;
+    animation-duration: 2.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  .boxA{
+    height: 300px;
+    width: 85%;
+    float: left;
+    margin: 20px 0px 50px 40px;
+  }
+  .boximg1{
+    height: 140px;
+    width: 100%;
+    margin: 0px 0px 20px 0px;
+  }
+  .boximg1 img{
+    height: 100%;
+    width: 100%;
+  }
+  .boxA1{
+    height: 160px;
+    width: 100%;
+  }
+
+  .boxB{
+    height: 300px;
+    width: 85%;
+    float: left;
+    margin: 0px 0px 50px 40px;
+  }
+  .boximg2{
+    height: 140px;
+    width: 100%;
+    margin: 0px 0px 20px 0px;
+  }
+  .boximg2 img{
+    height: 100%;
+    width: 100%;
+  }
+  .boxB1{
+    height: 160px;
+    width: 100%;
+  }
+
+  .boxC{
+    height: 300px;
+    width: 85%;
+    float: left;
+    margin: 0px 0px 50px 40px;
+  }
+  .boximg3{
+    height: 140px;
+    width: 100%;
+    margin: 0px 0px 20px 0px;
+  }
+  .boximg3 img{
+    height: 100%;
+    width: 100%;
+  }
+  .boxC1{
+    height: 160px;
+    width: 100%;
+  }
+
+  .footer{
+    height: 900px;
+    width: 100%;
+    margin-top: 50px;
+    font-family: cursive;
+    font-weight: bolder;
+    font-size: 13px;
+    background-color: #f5f5f5;
+  }
+  .box1{
+    height: 250px;
+    width: 85%;
+    margin: 70px 10px 0px 40px;
+    float: left;
+  }
+  .box2{
+    height: 250px;
+    width: 85%;
+    margin: 0px 10px 0px 40px;
+    float: left;
+  }
+  .box2a{
+    height: 150px;
+    width: 45%;
+    float: left;
+  }
+  .box2b{
+    height: 150px;
+    width: 45%;
+    float: left;
+  }
+  .box3{
+    height: 250px;
+    width: 85%;
+    margin: 0px 10px 0px 40px;
+    float: left;
+  }
+  .box3a{
+    height: 41px;
+    width: 10%;
+    background-color: white;
+    border-radius: 50%;
+    float: left;
+    margin: 12px 12px 0px 0px;
+    padding: 3%;
+    border: 0.5px solid lightgrey;
+  }
+  .box3a:hover{
+    background-color: #7fad39;
+    color: white;
+  }
+  .box4{
+    height: 50px;
+    width: 85%;
+    margin: 15px 0px 0px 40px;
+    float: left;
+    text-align: center; 
+    font-size: 12px; 
+    font-weight: bolder; 
+    font-family: cursive; 
+    border-top: 1px solid dimgrey;
+  }
+
+}
+
+@media screen and (max-width: 450px) {
+  .top{
+    height: 50px;
+    width: 100%;
+    font-size: 13px;
+    font-weight: bolder;
+    background-color: #f5f5f5;
+    padding: 8px 0px 5px 40px;
+    font-family: cursive;
+    display: none;
+  }
+  .div1{
+    height: 30px;
+    width: 20%;
+    float: left;
+    border-right: 2px solid grey;
+  }
+  .div2{
+    height: 30px;
+    width: 56%;
+    float: left;
+    border-right: 2px solid grey;
+  }
+  .div3{
+    height: 30px;
+    width: 15%;
+    float: left;
+    border-right: 2px solid grey;
+  }
+  .div4{
+    height: 30px;
+    width: 7%;
+    float: left;
+  }
+
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: black;
+    padding: 10px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    float: left;
+    width: 40%;
+    height: 40px;
+  }
+
+  .topnav a:not(:first-child), .sdropdown .sdropbtn {
+    display: none;
+    background-color: none;
+  }
+  .topnav a.icon {
+    color: none;
+    float: right;
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+  .topnav.responsive {
+    position: relative;
+    width: 100%;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    color: none;
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive a:hover{
+    background-color: none;
+    color: none;
+  }
+  .topnav.responsive .sdropdown {float: none;}
+  .topnav.responsive .sdropdown-content {position: relative;}
+  .topnav.responsive .sdropdown .sdropbtn {
+    display: block;
+    color: none;
+    width: 100%;
+    text-align: left;
+  }
+  .topnav.responsive .sdropdown .sdropbtn:hover{
+    color: none;
+  }
+  .topnav.responsive .sdropdown-content a{
+    position: none;
+    font-weight: none;
+    font-size: none;
+  }
+  .topnav.responsive .sdropdown-content a:hover{
+    background-color: none;
+    color: none;
+  }
+  .item{
+    display: none;
+  }
+
+  .section1{
+    height: 30px;
+    width: 100%;
+    float: left;
+    margin: 5px 0px 0px 0px;
+  }
+  .rec1{
+    height: 30px;
+    width: 100%;
+    padding: 3px 0px 0px 10px;
+    background-color: #7fad39;
+  }
+  .dropbtn {
+    background-color: #7fad39;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    border: none;
+    cursor: pointer;
+    word-spacing: 10px;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 0.5px solid grey;
+    min-width: 160px;
+    overflow: auto;
+    right: 0;
+  }
+
+  .dropdown-content a {
+    color: black;
+    font-family: cursive;
+    font-weight: bolder;
+    font-size: 13px;
+    padding: 11px 12px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .show {display: block;}
+  .section1i{
+    height: 85%; 
+    width: 100%; 
+    margin-top: 20px; 
+    border: 1px solid orange;
+    display: none;
+  }
+
+  .section2{
+    height: 110px;
+    width: 100%;
+    float: left;
+    margin: 15px 0px 0px 0px;
+    padding-top: 0px;
+  }
+  .searchcontainer{
+    height: 40px;
+    width: 80%;
+    border: 1px solid grey;
+    float: left;
+    padding: 0px 0px 0px 0px;
+  }
+  .dropdown2{
+    height: 20px;
+    width: 30%;
+    float: left;
+    border: none;
+    font-weight: bolder;
+    font-family: cursive;
+    font-size: 15px;
+    margin-top: 10px;
+    border: none;
+    border-right: 1px solid grey;
+  }
+  .search{
+    height: 100%;
+    width: 65%;
+    float: left;
+    border: none;
+    font-family: cursive;
+    font-weight: bolder;
+    font-size: 12px;
+    margin-left: 8px;
+  }
+  .button{
+    height: 40px;
+    width: 20%;
+    float: left;
+    letter-spacing: 1.5px;
+    color: white;
+    font-family: fantasy;
+    font-size: 10px;
+    background-color: #7fad39;
+    border: none;
+  }
+  .phoneicon{
+    height: 40px;
+    width: 12%;
+    border-radius: 25px 25px 25px 25px;
+    float: left;
+    text-align: center;
+    color: #7fad39;
+    margin: 15px 0px 0px 20%;
+    padding: 10px 0px 5px 0px;
+    background-color: #f5f5f5;
+  }
+  .container{
+    height: 50px;
+    width: 40%;
+    float: right;
+    letter-spacing: 0px;
+    margin: 15px 25% 0px 5px;
+    font-size: 13px;
+    padding: 5px 0px 0px 0px;
+    text-align: center;
+  }
+  .contd{
+    font-size: 11px;
+  }
+  .section3{
+    height: 200px;
+    width: 100%;
+    float: left;
+    margin: 10px 0px 0px 0px;
+  }
+  .img{
+    height: 100%;
+    width: 100%;
+  }
+
+  .slide{
+    height: 100px;
+    width: 100%;
+    margin: 30px 0px 20px 0px;
+  }
+  .mySlides {
+    display: none;
+    height: 100%;
+  }
+  .img1 {
+    vertical-align: middle;
+    height: 100%;
+    width: 23.5%; 
+    float: left; 
+    margin-left: 2%;
+  }
+
+  /* Slideshow container */
+  .slidecontainer {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+  }
+
+  .active {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 0.5s;
+    animation-name: fade;
+    animation-duration: 0.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  .recontainer{
+    height: 100%;
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+  }
+  input[type=radio] + label {             /* box with rounded corner */
+    padding: 0px 10% 2% 2%;
+    position: relative;
+    font-family: cursive;
+    font-size: 15px;
+    font-weight: bolder;
+    top: 1px;
+  }
+  .alltab{
+    margin-left: 0%;
+  }
+  .rec2a{
+    height: 12%;
+    width: 80%;
+    float: left;
+    margin: 0px 0px 20px 10%;
+  }
+  .rec3{
+    height: 270px;
+    width: 44.5%;
+    float: left;
+    margin: 50px 0px 30px 60px;
+    display: none;
+  }
+  .rec4{
+    height: 270px;
+    width: 46%;
+    float: left;
+    margin: 50px 0px 30px 20px;
+    display: none;
+  }
+
+  /*First Latest Product Slide*/
+  .recslide1{
+    height: 445px;
+    width: 100%;
+    float: left;
+    margin: 40px 0px 50px 1.5%;
+  }
+  .recslide1a{
+    height: 380px;
+    width: 100%;
+    margin: 30px 0px 0px 0px;
+    padding: 0px;
+  }
+
+  .smySlides {display: none;}
+  .simg1 {
+    vertical-align: middle;
+    height: 100px;
+    margin-right: 20px;
+  }
+
+  /* Slideshow container */
+  .sslidecontainer {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+  }
+
+  .sactive {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .sfade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2.5s;
+    animation-name: fade;
+    animation-duration: 2.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  /*Second Latest Product Slide*/
+  .recslide2{
+    height: 445px;
+    width: 100%;
+    float: left;
+    margin: 40px 0px 50px 60px;
+    display: none;
+  }
+  .recslide1b{
+    height: 380px;
+    width: 100%;
+    margin: 30px 0px 0px 0px;
+    padding: 0px;
+  }
+
+  .amySlides {display: none;}
+  .aimg1 {
+  vertical-align: middle;
+  height: 100px;
+  margin-right: 20px;
+  }
+
+  /* Slideshow container */
+  .aslidecontainer {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+  }
+
+  .aactive {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .afade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2.5s;
+    animation-name: fade;
+    animation-duration: 2.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  /*Third Latest Product Slide*/
+  .recslide3{
+    height: 445px;
+    width: 100%;
+    float: left;
+    margin: 40px 0px 50px 60px;
+    display: none;
+  }
+  .recslide1c{
+    height: 380px;
+    width: 100%;
+    margin: 30px 0px 0px 0px;
+    padding: 0px;
+  }
+
+  .dmySlides {display: none;}
+  .dimg1 {
+    vertical-align: middle;
+    height: 100px;
+    margin-right: 20px;
+  }
+
+  /* Slideshow container */
+  .dslidecontainer {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+  }
+
+  .dactive {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .dfade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2.5s;
+    animation-name: fade;
+    animation-duration: 2.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  .boxA{
+    height: 330px;
+    width: 90%;
+    float: left;
+    margin: 20px 0px 30px 5%;
+  }
+  .boximg1{
+    height: 140px;
+    width: 100%;
+    margin: 0px 0px 20px 0px;
+    border: 1px solid #7fad39;
+  }
+  .boximg1 img{
+    height: 100%;
+    width: 100%;
+  }
+  .boxA1{
+    height: 160px;
+    width: 100%;
+  }
+
+  .boxB{
+    height: 330px;
+    width: 90%;
+    float: left;
+    margin: 0px 0px 50px 5%;
+  }
+  .boximg2{
+    height: 140px;
+    width: 100%;
+    margin: 0px 0px 20px 0px;
+    border: 1px solid #7fad39;
+  }
+  .boximg2 img{
+    height: 100%;
+    width: 100%;
+  }
+  .boxB1{
+    height: 160px;
+    width: 100%;
+  }
+
+  .boxC{
+    height: 300px;
+    width: 90%;
+    float: left;
+    margin: 0px 0px 50px 5%;
+  }
+  .boximg3{
+    height: 140px;
+    width: 100%;
+    margin: 0px 0px 20px 0px;
+    border: 1px solid #7fad39;
+  }
+  .boximg3 img{
+    height: 100%;
+    width: 100%;
+  }
+  .boxC1{
+    height: 160px;
+    width: 100%;
+  }
+
+  .footer{
+    height: 1150px;
+    width: 100%;
+    margin-top: 50px;
+    font-family: cursive;
+    font-weight: bolder;
+    font-size: 13px;
+    background-color: #f5f5f5;
+  }
+  .box1{
+    height: 200px;
+    width: 95%;
+    margin: 50px 10px 100px 2%;
+    float: left;
+  }
+  .box2{
+    height: 200px;
+    width: 95%;
+    margin: 0px 10px 100px 2%;
+    float: left;
+  }
+  .box2a{
+    height: 150px;
+    width: 50%;
+    float: left;
+  }
+  .box2b{
+    height: 150px;
+    width: 50%;
+    float: left;
+  }
+  .box3{
+    height: 250px;
+    width: 95%;
+    margin: 0px 10px 50px 2%;
+    float: left;
+  }
+  .box3a{
+    height: 40px;
+    width: 15%;
+    background-color: white;
+    border-radius: 50%;
+    float: left;
+    margin: 12px 12px 0px 0px;
+    padding: 4%;
+    border: 0.5px solid lightgrey;
+  }
+  .box3a:hover{
+    background-color: #7fad39;
+    color: white;
+  }
+  .box4{
+    height: 50px;
+    width: 95%;
+    margin: 50px 0px 0px 2%;
+    float: left;
+    text-align: center; 
+    font-size: 11px; 
+    font-weight: bolder; 
+    font-family: cursive; 
+    border-top: 1px solid grey;
+  }
+
+}

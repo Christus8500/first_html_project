@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JOIN US</title>
+  <link rel="stylesheet" type="text/css" href="ProjectCss/join.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 2000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myfunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+<body onload="myFunction()" style="margin:0;">
+<div id="loader"></div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+
+<header class="top">
+<div style="padding: 3px 0px 0px 20px;" class="div1"><i style="margin-right: 8px;" class="fa fa-envelope"></i>christozaipha69@gmail</div>
+<div style="padding: 3px 10px 0px 20px;" class="div2">Free Shipping for all Order of $99<a style="text-decoration: none; color: black;" href=""><i style="margin-left: 290px;" class="fa fa-facebook"></i><i style="margin-left: 30px;" class="fa fa-twitter"></i><i style="margin-left: 30px;" class="fa fa-instagram"></i><i style="margin-left: 30px;" class="fa fa-pinterest"></i></a></div>
+<div style="padding: 3px 10px 0px 10px;" class="div3"><i class="fa fa-envelope"></i>christozaipha69@gmail</div>
+<div style="padding: 3px 10px 0px 10px;" class="div4"><a style="text-decoration: none; color: black;" href="join.html"><i style="margin-right: 5px;" class="fa fa-user"></i>SignUp</a></div>
+</header>
+
+<div class="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+      <div class="nav-title">
+        <a href="index.html"><img style="margin-top: 0px;" src="images/Snapshot.png"></a>
+      </div>
+    </div>
+   
+<script>
+function myFunctionss() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+ <div class="topnav" id="myTopnav">
+  <a href="index.html" class="">HOME</a>
+  <a href="shop.html">SHOP</a>
+  <div class="sdropdown">
+    <button class="sdropbtn">PAGES</button>
+    <div class="sdropdown-content">
+     <a href="shopdetails.html">Shop Details</a>
+      <a href="shoppingcart.html">Shopping Cart</a>
+      <a href="checkout.html">Check out</a>
+      <a href="blogdetails.html">Blog Detials</a>
+    </div>
+  </div>
+  <a href="about.html">ABOUT US</a>
+  <a href="contact.html" style="margin-right: 170px;">CONTACT US</a>
+
+    <a href=""><i class="fa fa-heart"></i></a>
+    <a href=""><i class="fa fa-shopping-bag"></i></a>
+
+  <div class="item">
+    <span style="font-family: cursive; font-size: 13px; margin-left: 20px;">item:</span><b style="margin-left: 3px; font-size: 13px; letter-spacing: 1px; font-weight: lighter;">$150.00</b>
+  </div>
+
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunctionss()">&#9776;</a>
+</div>
+</div>
+
+
+ <section class="section1">
+  <div class="rec1">
+  <div class="dropdown">
+  <span onclick="myfunction()" class="dropbtn"><i style="margin-right: 8px;" class="fa fa-bars"></i>All departments<i style="margin-left: 10px;" class="fa fa-angle-down"></i></span>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home">Fresh Meat</a>
+    <a href="#about">Vegetabes</a>
+    <a href="#contact">Fruit & Nut Gifts</a>
+    <a href="#home">Fresh Berries</a>
+    <a href="#about">Ocean Foods</a>
+    <a href="#contact">Butter & Egg</a>
+    <a href="#home">Fast Food</a>
+    <a href="#about">Fresh Onion</a>
+    <a href="#contact">Papaya & Crisps</a>
+    <a href="#about">Oatmeal</a>
+    <a href="#contact">Fresh Bananas</a>
+  </div>
+</div>
+</div>
+</section>
+
+<section class="section2">
+  <div class="searchcontainer">
+     <select class="dropdown2 option" style="outline: 0px; font-family: fantasy;">
+      <option style="background-color: #7fad39; color: white;">All</option>
+      <option style="background-color: #7fad39; color: white;">Fast Foods</option>
+      <option style="background-color: #7fad39; color: white;">Beverages</option>
+      <option style="background-color: #7fad39; color: white;">Fruits</option>
+      <option style="background-color: #7fad39; color: white;">Dried Fruits</option>
+      <option style="background-color: #7fad39; color: white;">Drinks</option>
+    </select>
+      <input type="search" name="" class="search" placeholder="What do you need?">
+  </div>
+
+  <button class="button">SEARCH</button>
+
+  <div class="phoneicon"><i class="fa fa-phone"></i></div>
+  <div class="container">
+   <span style="">+65 11.188.888</span><br>
+   <span style="font-family: cursive; font-size: 13px; font-weight: bolder;">support 24/7 time</span><br>
+  </div>
+</section>
+
+<div class="clear"></div>
+
+<section class="expcontainer">
+
+  <div style="height: 100px; width: 50%; float: left;">
+    <p class="pcap" style="letter-spacing: 1px; font-family: fantasy; font-weight: lighter; font-size: 20px;">
+      REGISTER WITH US AND ENJOY THE BENEFITS OF <b style="font-family: fantasy; font-weight: lighter; color: white;">OGANI</b>
+    </p>
+    <p class="plow">
+      Join Us Today And Get 50% Cash Back When You Buy Any Product That Worths $200 And Above.
+    </p>
+  </div>
+
+  <div class="expimg">
+    <img src="images/shop2a.png">
+  </div>
+</section>
+
+<section class="modcontainer">
+  
+<div class="imgcontainer" style="background-image: url(images/logins.png);">
+  <div class="btncontainer">
+    <button class="smbtn1" onclick="document.getElementById('id02').style.display='block'" style="width: 100%;">SIGN UP</button>
+  </div>
+</div>
+</section>
+
+<div id="id02" class="smodal">
+  
+  <form class="smodal-content sanimate" method="post">
+    <div class="simgcontainer">
+      <span onclick="document.getElementById('id02').style.display='none'" class="sclose" title="Close Modal">&times;</span>
+      <img src="images/avatar4.jpg" alt="Avatar" class="savatar">
+    </div>
+
+    <div class="scontainer">
+      <label for="uname"><b>First Name</b></label>
+      <input type="text" placeholder="Enter First Name" required>
+
+      <label for="uname"><b>Last Name</b></label>
+      <input type="text" placeholder="Enter Last Name" required>
+
+      <label for="uname"><b>Email</b></label>
+      <input type="email" placeholder="Your Email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Chose Password" name="psw" id="myText" required>
+        
+      <button class="smbtn2" onclick="button()" type="submit">SIGN UP</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> <b style="font-size: 15px; font-family: cursive;">Remember me</b>
+      </label>
+    </div>
+
+    <div class="scontainer" style="background-color:#f1f1f1">
+      <button class="smbtn3" type="button" onclick="document.getElementById('id02').style.display='none'" class="scancelbtn">CANCEL</button>
+      <span style="font-size: 15px; font-family: cursive;" class="spsw">OR <b><a href="#">Sign in</a></b></span>
+    </div>
+  </form>
+</div>
+
+<script>
+      function button() {
+        if (document.getElementById("myText").value == "") {
+          alert('Please Fill Out The Appropriate Fields')
+        } 
+        else {
+          alert('Sign Up Successful.')
+        }
+      }
+</script>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+<div class="clear"></div>
+
+<footer class="footer">
+  <div class="box1">
+    <a href="index.html"><img src="images/logo.png"></a>
+    <p>Address: 60-49 Road 11378 New York</p>
+    <p>Phone: +65 11.188.888</p>
+    <p>Email: christozaipha69@gmail.com</p>
+  </div>
+
+  <div class="box2">
+    <p style="margin-left: 0px; font-family: fantasy; font-weight: lighter; font-size: 18px; letter-spacing: 1px;">Useful Links</p>
+    <div class="box2a">
+      <ul style="list-style-type: none;">
+      <li><a style="text-decoration: none; color: black;" href="about.html">About our shop</a></li>
+      <li><a style="text-decoration: none; color: black;" href="faq.html">FAQs</a></li>
+      <li><a style="text-decoration: none; color: black;" href="conditions.html">Terms & Conditions</a></li>
+      <li><a style="text-decoration: none; color: black;" href="policy.html">Privacy policy</a></li>
+      <li><a style="text-decoration: none; color: black;" href="services.html">Services</a></li>
+    </ul>
+    </div>
+    <div class="box2b">
+      <ul style="list-style-type: none;">
+      <li><a style="text-decoration: none; color: black;" href="buyer.html">Buyer's Safety</a></li>
+      <li><a style="text-decoration: none; color: black;" href="track.html">Track Your Order</a></li>
+      <li><a style="text-decoration: none; color: black;" href="contact.html">Contact</a></li>
+      <li><a style="text-decoration: none; color: black;" href="join.html">Join Us</a></li>
+    </ul>
+    </div>  
+  </div>
+
+ <div class="box3">
+    <p style="font-family: fantasy; font-weight: lighter; font-size: 18px; letter-spacing: 1px;">Join Our Newsletter Now</p>
+    <p>Get E-mail updates about our latest shop and special offers.</p>
+    <input style="height: 40px; font-family: cursive; font-size: 15px; font-weight: bolder; width: 80%; border: 0.5px solid grey; padding-left: 20px; border-radius: 0px; float: left; margin-top: -0px;" type="text"placeholder="Enter your mail">
+    <button style="height: 40px; font-family: fantasy; color: white; background-color: #7fad39; border: none; float: left;">SUBSCRIBE</button>
+
+    <div class="clear"></div>
+    
+    <a style="text-decoration: none; color: black;" href=""><div class="box3a"><i class="fa fa-facebook"></i></div></a>
+    <a style="text-decoration: none; color: black;" href=""><div class="box3a"><i class="fa fa-instagram"></i></div></a>
+    <a style="text-decoration: none; color: black;" href=""><div class="box3a"><i class="fa fa-twitter"></i></div></a>
+    <a style="text-decoration: none; color: black;" href=""><div class="box3a"><i class="fa fa-pinterest"></i></div></a>
+  </div>
+ <div class="clear"></div>
+
+ <div class="box4">
+   <h4>Copyright @ NNAMDI CHRISTUS - 9th Septemper, 2021. All rights reserved</h4>
+ </div>
+</footer>
+
+</body>
+</html>

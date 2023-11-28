@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SHOPPING CART</title>
+  <link rel="stylesheet" type="text/css" href="ProjectCss/shoppingcart.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+</head>
+
+<body onload="myFunction()" style="margin:0;">
+<div id="loader"></div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+
+   <header class="top">
+    <div style="padding: 3px 0px 0px 20px;" class="div1"><i style="margin-right: 8px;" class="fa fa-envelope"></i>christozaipha69@gmail</div>
+    <div style="padding: 3px 10px 0px 20px;" class="div2">Free Shipping for all Order of $99<a style="text-decoration: none; color: black;" href=""><i style="margin-left: 290px;" class="fa fa-facebook"></i><i style="margin-left: 30px;" class="fa fa-twitter"></i><i style="margin-left: 30px;" class="fa fa-instagram"></i><i style="margin-left: 30px;" class="fa fa-pinterest"></i></a></div>
+    <div style="padding: 3px 10px 0px 10px;" class="div3"><i class="fa fa-envelope"></i>christozaipha69@gmail</div>
+    <div style="padding: 3px 10px 0px 10px;" class="div4"><a style="text-decoration: none; color: black;" href="join.html"><i style="margin-right: 5px;" class="fa fa-user"></i>SignUp</a></div>
+  </header>
+
+  <div class="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+      <div class="nav-title">
+        <a href="index.html"><img style="margin-top: 0px;" src="images/Snapshot.png"></a>
+      </div>
+    </div>
+   
+ <div class="topnav" id="myTopnav">
+  <a href="index.html" class="">HOME</a>
+  <a href="shop.html">SHOP</a>
+  <div class="sdropdown">
+    <button class="sdropbtn">PAGES</button>
+    <div class="sdropdown-content">
+     <a href="shopdetails.html">Shop Details</a>
+      <a href="shoppingcart.html">Shopping Cart</a>
+      <a href="checkout.html">Check out</a>
+      <a href="blogdetails.html">Blog Detials</a>
+    </div>
+  </div>
+  <a href="about.html">ABOUT US</a>
+  <a href="contact.html" style="margin-right: 170px;">CONTACT US</a>
+
+  <a href=""><i class="fa fa-heart"></i></a>
+  <a href=""><i class="fa fa-shopping-bag"></i></a>
+
+  <div class="item">
+    <span style="font-family: cursive; font-size: 13px; margin-left: 20px;">item:</span><b style="margin-left: 3px; font-size: 13px; letter-spacing: 1px; font-weight: lighter;">$150.00</b>
+  </div>
+
+  </div>
+  </div>
+
+
+<section class="section1">
+  <div class="rec1">
+  <div class="dropdown">
+  <span onclick="myfunction()" class="dropbtn"><i style="margin-right: 8px;" class="fa fa-bars"></i>All departments<i style="margin-left: 10px;" class="fa fa-angle-down"></i></span>
+    <div id="myDropdown" class="dropdown-content">
+      <a href="#home">Fresh Meat</a>
+      <a href="#about">Vegetabes</a>
+      <a href="#contact">Fruit & Nut Gifts</a>
+      <a href="#home">Fresh Berries</a>
+      <a href="#about">Ocean Foods</a>
+      <a href="#contact">Butter & Egg</a>
+      <a href="#home">Fast Food</a>
+      <a href="#about">Fresh Onion</a>
+      <a href="#contact">Papaya & Crisps</a>
+      <a href="#about">Oatmeal</a>
+      <a href="#contact">Fresh Bananas</a>
+    </div>
+  </div>
+  </div>
+</section>
+
+<section class="section2">
+  <div class="searchcontainer">
+     <select class="dropdown2 option" style="outline: 0px; font-family: fantasy;">
+      <option style="background-color: #7fad39; color: white;">All</option>
+      <option style="background-color: #7fad39; color: white;">Fast Foods</option>
+      <option style="background-color: #7fad39; color: white;">Beverages</option>
+      <option style="background-color: #7fad39; color: white;">Fruits</option>
+      <option style="background-color: #7fad39; color: white;">Dried Fruits</option>
+      <option style="background-color: #7fad39; color: white;">Drinks</option>
+    </select>
+      <input type="search" name="" class="search" placeholder="What do you need?">
+  </div>
+
+  <button class="button">SEARCH</button>
+
+  <div class="phoneicon"><i class="fa fa-phone"></i></div>
+  <div class="container">
+   <span style="">+65 11.188.888</span><br>
+   <span style="font-family: cursive; font-weight: bolder; font-size: 13px;">support 24/7 time</span><br>
+  </div>
+</section>
+
+<section class="sectioncontact" style="background-image: url(images/tomato5.jpg); background-size: 100% 100%;">
+  <div style="height: 150px; width: 100%; background-color: rgba(0,0,0,0.47);">
+    <div style="text-align: center; font-size: 40px; color: white; letter-spacing: 1.5px; padding: 30px 0px 0px 0px; margin-bottom: 5px;">Shopping Cart</div>
+
+    <div style="text-align: center; font-size: 18px; color: white;"><a href="index.html" style="text-decoration: none; color: white;">Home -- </a>  <span style="font-family: cursive; font-weight: bolder;">Shopping Cart</span></div>
+  </div>
+</section>
+
+<div class="clear"></div>
+
+<table border="0" width="91%" height="300" style="margin: 30px 0px 0px 60px; text-align: center; border-bottom: 1px solid lightgrey;">
+  <tr style="font-size: 20px; font-weight: lighter; letter-spacing: 1.8px;">
+    <th style="width: 50%; height: 100px; border: none; border-bottom: 1px solid lightgrey; text-align: left;">Products</th>
+    <th style="border: none; border-bottom: 1px solid lightgrey;">Price</th>
+    <th style="border: none; border-bottom: 1px solid lightgrey;">Quantity</th>
+    <th style="border: none; border-bottom: 1px solid lightgrey;">Total</th>
+  </tr>
+
+  <tr style="font-family: cursive;">
+    <td style="border: none; border-bottom: 1px solid lightgrey; text-align: left;"> 
+      <img src="images/Screenshot_33.png" style="height: 80px; width: 20%; float: left; margin-right: 20px;"> 
+      <p style="margin-top: 30px; font-weight: bolder;">Vegetable's Package</p>
+    </td>
+
+    <td style="border: none; border-bottom: 1px solid lightgrey;" id="price"><b>55.00</b></td>
+
+    <td style="border: none; border-bottom: 1px solid lightgrey;">
+      <div class="sd2adiv">
+        <button onclick="decrement()" style="margin-right: 15px; border: none; background-color: unset; font-size: 18px; font-weight: bolder; cursor: pointer;">-</button>
+        <span id="demo" style="text-align: center; font-size: 15px; font-family: cursive; font-weight: bolder;">0</span>
+        <button onclick="increment()" style="margin-left: 15px; border: none; background-color: unset; font-size: 18px; font-weight: bolder; cursor: pointer;">+</button>
+      </div>
+    </td>
+
+    <td style="border: none; border-bottom: 1px solid lightgrey; font-weight: bolder;" id="total"><b>$0.00</b></td>
+  </tr>
+  
+</table>
+
+<section class="Z1">
+  <button style="height: 50px; width: 20%; border: none; font-family: fantasy; font-size: 15px; letter-spacing: 2px; background-color: #f5f5f5; color: dimgrey; float: left;">
+    <a href="shop.html" style="text-decoration: none; color: dimgrey;">CONTINUE SHOPPING</a>
+  </button>
+
+  <button style="height: 50px; width: 20%; border: none; font-family: fantasy; font-size: 15px; letter-spacing: 2px; background-color: #f5f5f5; color: dimgrey; float: right;">
+    <i class="fa fa-spinner" style="margin-right: 8px;"></i>UPDATE CART
+  </button>
+</section>
+
+<section class="Z2">
+  <span style="font-family: fantasy; font-size: 20px; letter-spacing: 1.5px; word-spacing: 8px;">Discount Codes</span><br>
+
+  <input type="text" placeholder="Enter Your Coupon Code" style="height: 50px; width: 40%; border: 1px solid lightgrey; text-align: center; float: left; margin: 30px 20px 0px 0px; font-family: cursive; font-weight: bolder; font-size: 15px;">
+
+  <button style="height: 50px; width: 40%; border: none; font-family: fantasy; font-size: 15px; letter-spacing: 5px; background-color: dimgrey; color: white; float: left; margin: 30px 0px 0px 0px;">
+    APPLY COUPON
+  </button>
+</section>
+
+<section class="Z3">
+  <h4 style="font-size: 25px;">Cart Total</h4>
+  <div style="height: 50px; width: 100%; border-bottom: 1px solid lightgrey; font-family: cursive; font-weight: bolder; font-size: 15px; padding-top: 15px;">
+    Subtotal<span style="color: red; margin-left: 76%;" id="subTotal">$0.00</span>
+  </div>
+
+   <div style="height: 50px; width: 100%; font-family: cursive; font-weight: bolder; font-size: 15px; padding-top: 15px;">
+    Total<span style="color: red; margin-left: 80%;" id="overallTotal">$0.00</span>
+  </div>
+
+  <button style="height: 50px; width: 100%; border: none; font-family: fantasy; font-size: 15px; letter-spacing: 2.5px; background-color: #7fad39; color: white; float: right; margin: 30px 0px 0px 0px;" onclick="btnFunction()">
+    <a href="checkout.html" target="_blank" style="text-decoration: none; color: white;"> PROCEED TO CHECKOUT</a>
+  </button>
+</section>
+
+<div class="clear"></div>
+
+<footer class="footer">
+  <div class="box1">
+    <a href="index.html"><img src="images/logo.png"></a>
+    <p>Address: 60-49 Road 11378 New York</p>
+    <p>Phone: +65 11.188.888</p>
+    <p>Email: christozaipha69@gmail.com</p>
+  </div>
+
+  <div class="box2">
+    <p style="margin-left: 0px; font-family: fantasy; font-weight: lighter; font-size: 18px; letter-spacing: 1px;">Useful Links</p>
+    <div class="box2a">
+      <ul style="list-style-type: none;">
+      <li><a style="text-decoration: none; color: black;" href="about.html">About our shop</a></li>
+      <li><a style="text-decoration: none; color: black;" href="faq.html">FAQs</a></li>
+      <li><a style="text-decoration: none; color: black;" href="conditions.html">Terms & Conditions</a></li>
+      <li><a style="text-decoration: none; color: black;" href="policy.html">Privacy policy</a></li>
+      <li><a style="text-decoration: none; color: black;" href="services.html">Services</a></li>
+    </ul>
+    </div>
+    <div class="box2b">
+      <ul style="list-style-type: none;">
+      <li><a style="text-decoration: none; color: black;" href="buyer.html">Buyer's Safety</a></li>
+      <li><a style="text-decoration: none; color: black;" href="track.html">Track Your Order</a></li>
+      <li><a style="text-decoration: none; color: black;" href="contact.html">Contact</a></li>
+      <li><a style="text-decoration: none; color: black;" href="join.html">Join Us</a></li>
+    </ul>
+    </div>  
+  </div>
+
+  <div class="box3">
+    <p style="font-family: fantasy; font-weight: lighter; font-size: 18px; letter-spacing: 1px;">Join Our Newsletter Now</p>
+    <p>Get E-mail updates about our latest shop and special offers.</p>
+    <input style="height: 40px; font-family: cursive; font-size: 15px; font-weight: bolder; width: 80%; border: 0.5px solid grey; padding-left: 20px; float: left;" type="text"placeholder="Enter your mail"><button style="height: 40px; font-family: fantasy; color: white; background-color: #7fad39; border: none; float: left;">SUBSCRIBE</button>
+
+    <div class="clear"></div>
+    
+    <a style="text-decoration: none; color: black;" href="#"><div class="box3a"><i class="fa fa-facebook"></i></div></a>
+    <a style="text-decoration: none; color: black;" href="#"><div class="box3a"><i class="fa fa-instagram"></i></div></a>
+    <a style="text-decoration: none; color: black;" href="#"><div class="box3a"><i class="fa fa-twitter"></i></div></a>
+    <a style="text-decoration: none; color: black;" href="#"><div class="box3a"><i class="fa fa-pinterest"></i></div></a>
+  </div>
+  <div class="clear"></div>
+
+ <div class="box4">
+   <h4>Copyright @ NNAMDI CHRISTUS - 9th Septemper, 2021. All rights reserved</h4>
+ </div>
+</footer>
+
+<script src="ProjectJs/shoppingcart.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SHOP</title>
+  <link rel="stylesheet" type="text/css" href="ProjectCss/shop.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+</head>
+<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 2000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myfunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+<body onload="myFunction()" style="margin:0;">
+<div id="loader"></div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+
+   <header class="top">
+    <div style="padding: 3px 0px 0px 20px;" class="div1"><i style="margin-right: 8px;" class="fa fa-envelope"></i>christozaipha69@gmail</div>
+    <div style="padding: 3px 10px 0px 20px;" class="div2">Free Shipping for all Order of $99<a style="text-decoration: none; color: black;" href=""><i style="margin-left: 290px;" class="fa fa-facebook"></i><i style="margin-left: 30px;" class="fa fa-twitter"></i><i style="margin-left: 30px;" class="fa fa-instagram"></i><i style="margin-left: 30px;" class="fa fa-pinterest"></i></a></div>
+    <div style="padding: 3px 10px 0px 10px;" class="div3"><i class="fa fa-envelope"></i>christozaipha69@gmail</div>
+    <div style="padding: 3px 10px 0px 10px;" class="div4"><a style="text-decoration: none; color: black;" href="join.html"><i style="margin-right: 5px;" class="fa fa-user"></i>SignUp</a></div>
+  </header>
+
+  <div class="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+      <div class="nav-title">
+        <a href="index.html"><img style="margin-top: 0px;" src="images/Snapshot.png"></a>
+      </div>
+    </div>
+   
+  <script>
+function myFunctionss() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+ <div class="topnav" id="myTopnav">
+  <a href="index.html" class="">HOME</a>
+  <a href="shop.html">SHOP</a>
+  <div class="sdropdown">
+    <button class="sdropbtn">PAGES</button>
+    <div class="sdropdown-content">
+     <a href="shopdetails.html">Shop Details</a>
+      <a href="shoppingcart.html">Shopping Cart</a>
+      <a href="checkout.html">Check out</a>
+      <a href="blogdetails.html">Blog Detials</a>
+    </div>
+  </div>
+  <a href="about.html">ABOUT US</a>
+  <a href="contact.html" style="margin-right: 170px;">CONTACT US</a>
+
+    <a href=""><i class="fa fa-heart"></i></a>
+    <a href=""><i class="fa fa-shopping-bag"></i></a>
+
+  <div class="item">
+    <span style="font-family: cursive; font-size: 13px; margin-left: 20px;">item:</span><b style="margin-left: 3px; font-size: 13px; letter-spacing: 1px; font-weight: lighter;">$150.00</b>
+  </div>
+
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunctionss()">&#9776;</a>
+</div>
+</div>
+
+
+ <section class="section1">
+  <div class="rec1">
+  <div class="dropdown">
+  <span onclick="myfunction()" class="dropbtn"><i style="margin-right: 8px;" class="fa fa-bars"></i>All departments<i style="margin-left: 10px;" class="fa fa-angle-down"></i></span>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home">Fresh Meat</a>
+    <a href="#about">Vegetabes</a>
+    <a href="#contact">Fruit & Nut Gifts</a>
+    <a href="#home">Fresh Berries</a>
+    <a href="#about">Ocean Foods</a>
+    <a href="#contact">Butter & Egg</a>
+    <a href="#home">Fast Food</a>
+    <a href="#about">Fresh Onion</a>
+    <a href="#contact">Papaya & Crisps</a>
+    <a href="#about">Oatmeal</a>
+    <a href="#contact">Fresh Bananas</a>
+  </div>
+</div>
+</div>
+</section>
+
+<section class="section2">
+  <div class="searchcontainer">
+     <select class="dropdown2 option" style="outline: 0px; font-family: fantasy;">
+      <option style="background-color: #7fad39; color: white;">All</option>
+      <option style="background-color: #7fad39; color: white;">Fast Foods</option>
+      <option style="background-color: #7fad39; color: white;">Beverages</option>
+      <option style="background-color: #7fad39; color: white;">Fruits</option>
+      <option style="background-color: #7fad39; color: white;">Dried Fruits</option>
+      <option style="background-color: #7fad39; color: white;">Drinks</option>
+    </select>
+      <input type="search" name="" class="search" placeholder="What do you need?">
+  </div>
+
+  <button class="button">SEARCH</button>
+
+  <div class="phoneicon"><i class="fa fa-phone"></i></div>
+  <div class="container">
+   <span style="">+65 11.188.888</span><br>
+   <span style="font-family: cursive; font-weight: bolder; font-size: 13px;">support 24/7 time</span><br>
+  </div>
+</section>
+
+  <section class="sectioncontact" style="background-image: url(images/tomato5.jpg); background-size: 100% 100%;">
+    <div style="height: 150px; width: 100%; background-color: rgba(0,0,0,0.47);">
+      <div style="text-align: center; font-size: 40px; color: white; letter-spacing: 1.5px; padding: 30px 0px 0px 0px; margin-bottom: 5px;">Ogani Shop</div>
+
+      <div style="text-align: center; font-size: 20px; color: white; letter-spacing: 1.5px;"><a href="index.html" style="text-decoration: none; color: white;">Home -- </a>  <span style="font-family: cursive; font-weight: bolder;">Shop</span></div>
+    </div>
+  </section>
+
+  <div class="w1">
+      <div class="w1department">
+      <span style="font-size: 22px; margin-left: 38px;">Departments</span>
+      <ul style="list-style-type: none;">
+        <li><a href="#home">Fresh Meat</a></li>
+        <li><a href="#about">Vegetabes</a></li>
+        <li><a href="#contact">Fruit & Nut Gifts</a></li>
+        <li><a href="#home">Fresh Berries</a></li>
+        <li><a href="#about">Ocean Foods</a></li>
+        <li><a href="#contact">Butter & Egg</a></li>
+        <li><a href="#home">Fast Food</a></li>
+        <li><a href="#about">Fresh Onion</a></li>
+        <li><a href="#contact">Papaya & Crisps</a></li>
+        <li><a href="#about">Oatmeal</a></li>
+        <li><a href="#contact">Fresh Bananas</a></li>
+      </ul>
+      </div>
+
+      <div class="w1price">
+         <span style="font-size: 22px; margin-left: 38px;">Price</span>
+         <div style="margin: 10px 0px 0px 25px;">
+           <input type="range" min="10" max="540" value="10" class="slider" id="myRange">
+           <p style="color: #dd2222; padding-left: 10px; letter-spacing: 1.5px;">$<span id="demo"></span> - $540</p>
+         </div>
+
+        <script>
+            var slider = document.getElementById("myRange");
+            var output = document.getElementById("demo");
+            output.innerHTML = slider.value;
+
+            slider.oninput = function() {
+              output.innerHTML = this.value;
+            }
+        </script>
+      </div>
+
+      <div class="w1colors">
+        <div style="font-size: 22px; margin: 0px 0px 30px 38px;">Colors</div>
+
+        <span style="color: white; text-shadow: 1px 1px 2px black; margin: 20px 88px 10px 38px;">White</span>
+        <span style="color: orange;">Orange</span><br>
+        <span style="color: red; margin: 20px 105px 10px 38px;">Red</span>
+        <span style="color: black;">Black</span><br>
+        <span style="color: blue; margin: 20px 100px 10px 38px;">Blue</span>
+        <span style="color: #7fad39;">Green</span>
+      </div>
+
+      <div class="w1popularsize">
+        <span style="font-size: 22px; margin: 38px;">Popular Size</span>
+        <div style="margin-left: 38px; width: 70%; margin-top: 15px;">
+          <button>Large</button>
+          <button>Medium</button>
+          <button>Small</button>
+          <button>Tiny</button>
+        </div>
+
+      </div>
+
+  <div class="w1latestproduct">
+    <div style="margin-left: 38px;">
+        <div style="font-size: 22px; letter-spacing: 1px;">Latest  Product
+          <button style="height: 30px; width: 30px; margin: 0px 8px 0px 80px; border-radius: 0px; border: 0.3px solid grey;"><i class="fa fa-angle-left"></i></button>
+          <button style="height: 30px; width: 30px; margin: 0px 0px 0px 0px; border-radius: 0px; border: 0.3px solid grey;"><i class="fa fa-angle-right"></i></button>
+        </div>
+
+      <div class="recslide1a">
+          
+        <div class="smySlides sfade">
+           <div style="height: 100px; width: 100%; margin: 10px 0px 30px 0px;">
+            <img class="simg1" src="images/Screenshot_30.png" style="width: 24%; float: left;">
+             <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: left; padding-top: 30px;">Crab Pool Security</p>
+             <p style="text-align: left;">$30.00</p>
+           </div>
+
+            <div style="height: 100px; width: 100%; margin: 0px 0px 30px 0px;">
+            <img class="simg1" src="images/Screenshot_31.png" style="width: 24%; float: left;">
+             <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: left; padding-top: 30px;">Crab Pool Security</p>
+             <p style="text-align: left;">$30.00</p>
+           </div>
+
+            <div style="height: 100px; width: 100%; margin: 0px 0px 30px 0px;">
+            <img class="simg1" src="images/Screenshot_32.png" style="width: 24%; float: left;">
+             <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: left; padding-top: 30px;">Crab Pool Security</p>
+             <p style="text-align: left;">$30.00</p>
+           </div>
+        </div>
+
+        <div class="smySlides sfade">
+           <div style="height: 100px; width: 100%; margin: 10px 0px 30px 0px;">
+            <img class="simg1" src="images/Screenshot_30.png" style="width: 24%; float: left;">
+             <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: left; padding-top: 30px;">Crab Pool Security</p>
+             <p style="text-align: left;">$30.00</p>
+           </div>
+
+            <div style="height: 100px; width: 100%; margin: 0px 0px 30px 0px;">
+            <img class="simg1" src="images/Screenshot_31.png" style="width: 24%; float: left;">
+             <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: left; padding-top: 30px;">Crab Pool Security</p>
+             <p style="text-align: left;">$30.00</p>
+           </div>
+
+            <div style="height: 100px; width: 100%; margin: 0px 0px 30px 0px;">
+            <img class="simg1" src="images/Screenshot_32.png" style="width: 24%; float: left;">
+             <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: left; padding-top: 30px;">Crab Pool Security</p>
+             <p style="text-align: left;">$30.00</p>
+           </div>
+        </div>
+
+        <div class="smySlides sfade">
+           <div style="height: 100px; width: 100%; margin: 10px 0px 30px 0px;">
+            <img class="simg1" src="images/Screenshot_30.png" style="width: 24%; float: left;">
+             <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: left; padding-top: 30px;">Crab Pool Security</p>
+             <p style="text-align: left;">$30.00</p>
+           </div>
+
+            <div style="height: 100px; width: 100%; margin: 0px 0px 30px 0px;">
+            <img class="simg1" src="images/Screenshot_31.png" style="width: 24%; float: left;">
+             <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: left; padding-top: 30px;">Crab Pool Security</p>
+             <p style="text-align: left;">$30.00</p>
+           </div>
+
+            <div style="height: 100px; width: 100%; margin: 0px 0px 30px 0px;">
+            <img class="simg1" src="images/Screenshot_32.png" style="width: 24%; float: left;">
+             <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: left; padding-top: 30px;">Crab Pool Security</p>
+             <p style="text-align: left;">$30.00</p>
+           </div>
+        </div>
+
+      </div>
+    </div>  
+  </div>
+
+<script>
+var sslideIndex = 0;
+sshowSlides();
+
+function sshowSlides() {
+  var i;
+  var slides = document.getElementsByClassName("smySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  sslideIndex++;
+  if (sslideIndex > slides.length) {sslideIndex = 1}    
+  
+  slides[sslideIndex-1].style.display = "block";  
+  setTimeout(sshowSlides, 3000);
+}
+</script>
+
+  
+    
+</div>
+
+<div class="w2">
+
+  <div class="w2a">
+    <div style="border-bottom: 4px solid #7fad39; width: 14.5%; margin: 0px 0px 20px 0px; padding: 0px 0px 8px 0px;">
+      <span style="font-size: 38px;">Sale Off</span>
+    </div>
+
+    <div class="slide">
+    
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+   <div class="div">
+    <img class="img1" src="images/Screenshot_20.png">
+    <p style="font-family: cursive; font-weight: bolder; font-size: 15px; color: grey;">Dried fruits</p>
+    <p style="font-family: cursive; font-weight: bolder; font-size: 15px;">Raisin'n'nuts <button><a href="checkout.html">BUY</a></button></p>
+    <p style="font-family: fantasy; font-size: 20px;">$30.00 <del>$36.00</del></p>
+   </div>
+
+   <div class="div" style="width: 23.4%; float: left; margin-left: 20px;">
+    <img class="img1" src="images/Screenshot_21.png">
+    <p style="font-family: cursive; font-weight: bolder; font-size: 15px; color: grey;">Mixed fruits</p>
+    <p style="font-family: cursive; font-weight: bolder; font-size: 15px;">Raisin'n'nuts <button><a href="checkout.html">BUY</a></button></p>
+    <p style="font-family: fantasy; font-size: 20px;">$30.00 <del>$36.00</del></p>
+   </div>
+
+   <div class="div" style="width: 23.4%; float: left; margin-left: 20px;">
+    <img class="img1" src="images/Screenshot_22.png">
+   <p style="font-family: cursive; font-weight: bolder; font-size: 15px; color: grey;">Dried fruits</p>
+    <p style="font-family: cursive; font-weight: bolder; font-size: 15px;">Raisin'n'nuts <button><a href="checkout.html">BUY</a></button></p>
+    <p style="font-family: fantasy; font-size: 20px;">$30.00 <del>$36.00</del></p>
+   </div>
+
+   <div class="div" style="width: 23.4%; float: left; margin-left: 20px;">
+    <img class="img1" src="images/Screenshot_24.png">
+  <p style="font-family: cursive; font-weight: bolder; font-size: 15px; color: grey;">Dried fruits</p>
+    <p style="font-family: cursive; font-weight: bolder; font-size: 15px;">Raisin'n'nuts <button><a href="checkout.html">BUY</a></button></p>
+    <p style="font-family: fantasy; font-size: 20px;">$30.00 <del>$36.00</del></p>
+   </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="div">
+    <img class="img1" src="images/Screenshot_21.png">
+    <p style="font-family: cursive; font-weight: bolder; font-size: 15px; color: grey;">Mixed fruits</p>
+    <p style="font-family: cursive; font-weight: bolder; font-size: 15px;">Raisin'n'nuts <button><a href="checkout.html">BUY</a></button></p>
+    <p style="font-family: fantasy; font-size: 20px;">$30.00 <del>$36.00</del></p>
+   </div>
+
+   <div class="div" style="width: 23.4%; float: left; margin-left: 20px;">
+    <img class="img1" src="images/Screenshot_22.png">
+   <p style="font-family: cursive; font-weight: bolder; font-size: 15px; color: grey;">Dried fruits</p>
+    <p style="font-family: cursive; font-weight: bolder; font-size: 15px;">Raisin'n'nuts <button><a href="checkout.html">BUY</a></button></p>
+    <p style="font-family: fantasy; font-size: 20px;">$30.00 <del>$36.00</del></p>
+   </div>
+
+   <div class="div" style="width: 23.4%; float: left; margin-left: 20px;">
+    <img class="img1" src="images/Screenshot_24.png">
+    <p style="font-family: cursive; font-weight: bolder; font-size: 15px; color: grey;">Dried fruits</p>
+    <p style="font-family: cursive; font-weight: bolder; font-size: 15px;">Raisin'n'nuts <button><a href="checkout.html">BUY</a></button></p>
+    <p style="font-family: fantasy; font-size: 20px;">$30.00 <del>$36.00</del></p>
+   </div>
+
+   <div class="div" style="width: 23.4%; float: left; margin-left: 20px;">
+    <img class="img1" src="images/Screenshot_20.png">
+    <p style="font-family: cursive; font-weight: bolder; font-size: 15px; color: grey;">Dried fruits</p>
+    <p style="font-family: cursive; font-weight: bolder; font-size: 15px;">Raisin'n'nuts <button><a href="checkout.html">BUY</a></button></p>
+    <p style="font-family: fantasy; font-size: 20px;">$30.00 <del>$36.00</del></p>
+   </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="div">
+    <img class="img1" src="images/Screenshot_22.png">
+   <p style="font-family: cursive; font-weight: bolder; font-size: 15px; color: grey;">Dried fruits</p>
+    <p style="font-family: cursive; font-weight: bolder; font-size: 15px;">Raisin'n'nuts <button><a href="checkout.html">BUY</a></button></p>
+    <p style="font-family: fantasy; font-size: 20px;">$30.00 <del>$36.00</del></p>
+   </div>
+
+   <div class="div" style="width: 23.4%; float: left; margin-left: 20px;">
+    <img class="img1" src="images/Screenshot_24.png">
+    <p style="font-family: cursive; font-weight: bolder; font-size: 15px; color: grey;">Dried fruits</p>
+    <p style="font-family: cursive; font-weight: bolder; font-size: 15px;">Raisin'n'nuts <button><a href="checkout.html">BUY</a></button></p>
+    <p style="font-family: fantasy; font-size: 20px;">$30.00 <del>$36.00</del></p>
+   </div>
+
+   <div class="div" style="width: 23.4%; float: left; margin-left: 20px;">
+    <img class="img1" src="images/Screenshot_20.png">
+   <p style="font-family: cursive; font-weight: bolder; font-size: 15px; color: grey;">Dried fruits</p>
+    <p style="font-family: cursive; font-weight: bolder; font-size: 15px;">Raisin'n'nuts <button><a href="checkout.html">BUY</a></button></p>
+    <p style="font-family: fantasy; font-size: 20px;">$30.00 <del>$36.00</del></p>
+   </div>
+
+   <div class="div" style="width: 23.4%; float: left; margin-left: 20px;">
+    <img class="img1" src="images/Screenshot_21.png">
+    <p style="font-family: cursive; font-weight: bolder; font-size: 15px; color: grey;">Mixed fruits</p>
+    <p style="font-family: cursive; font-weight: bolder; font-size: 15px;">Raisin'n'nuts <button><a href="checkout.html">BUY</a></button></p>
+    <p style="font-family: fantasy; font-size: 20px;">$30.00 <del>$36.00</del></p>
+   </div>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  
+  slides[slideIndex-1].style.display = "block";  
+  setTimeout(showSlides, 4000);
+}
+</script>
+
+</div>
+</div>
+
+  </div>
+
+  <div class="w2b">
+
+   <div class="w2ba">
+
+      <div style="float: left; width: 33%;">
+        <span style="font-family: cursive; font-weight: bolder; font-size: 15px; color: grey;"> Sort By
+          <select style="margin-left: 12px; border: none; font-size: 16px; font-family: fantasy; outline: 0px;">
+            <option style="font-family: fantasy;">Default</option>
+            <option style="color: grey; font-family: cursive; font-weight: bolder; font-size: 15px;">Default</option>
+          </select>
+        </span>
+      </div>
+    
+      <div style="float: left; width: 34%; text-align: center;">
+        <span style="text-align: center;">16 <span style="color: grey; font-family: cursive; font-weight: bolder; font-size: 15px; margin-left: 8px; "> Products found</span></span>
+      </div>
+
+      <div style="float: left; width: 33%;">
+        <a href=""><i class="fa fa-list"></i></a>
+        <a href=""><i class="fa fa-th" style="padding: 0px 22px 0px 5px;"></i></a>
+      </div>
+
+   </div>
+
+   <div class="imgdiv">
+    <img style="width: 100%; height: 270px;" src="images/Screenshot_7.png">
+    <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: center;">Crab Pool Security</p>
+    <p style="text-align: center;">$30.00 <button><a href="checkout.html">BUY</a></button></p>
+   </div>
+
+   <div class="imgdiv">
+    <img style="width: 100%; height: 270px;" src="images/Screenshot_8.png">
+    <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: center;">Crab Pool Security</p>
+    <p style="text-align: center;">$30.00 <button><a href="checkout.html">BUY</a></button></p>
+   </div>
+
+   <div class="imgdiv" style="margin-right: 0px;">
+    <img style="width: 100%; height: 270px;" src="images/Screenshot_9.png">
+    <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: center;">Crab Pool Security</p>
+    <p style="text-align: center;">$30.00 <button><a href="checkout.html">BUY</a></button></p>
+   </div>
+
+    <div class="imgdiv">
+    <img style="width: 100%; height: 270px;" src="images/Screenshot_6.png">
+    <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: center;">Crab Pool Security</p>
+    <p style="text-align: center;">$30.00 <button><a href="checkout.html">BUY</a></button></p>
+   </div>
+
+   <div class="imgdiv">
+    <img style="width: 100%; height: 270px;" src="images/Screenshot_3.png">
+    <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: center;">Crab Pool Security</p>
+    <p style="text-align: center;">$30.00 <button><a href="checkout.html">BUY</a></button></p>
+   </div> 
+
+   <div class="imgdiv" style="margin-right: 0px;">
+    <img style="width: 100%; height: 270px;" src="images/Screenshot_4.png">
+    <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: center;">Crab Pool Security</p>
+    <p style="text-align: center;">$30.00 <button><a href="checkout.html">BUY</a></button></p>
+   </div>
+
+    <div class="imgdiv">
+    <img style="width: 100%; height: 270px;" src="images/Screenshot_10.png">
+    <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: center;">Crab Pool Security</p>
+    <p style="text-align: center;">$30.00 <button><a href="checkout.html">BUY</a></button></p>
+   </div>
+
+   <div class="imgdiv">
+    <img style="width: 100%; height: 270px;" src="images/Screenshot_5.png">
+    <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: center;">Crab Pool Security</p>
+    <p style="text-align: center;">$30.00 <button><a href="checkout.html">BUY</a></button></p>
+   </div>
+
+   <div class="imgdiv" style="margin-right: 0px;">
+    <img style="width: 100%; height: 270px;" src="images/Screenshot_26.png">
+    <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: center;">Crab Pool Security</p>
+    <p style="text-align: center;">$30.00 <button><a href="checkout.html">BUY</a></button></p>
+   </div>
+
+    <div class="imgdiv">
+    <img style="width: 100%; height: 270px;" src="images/Screenshot_28.png">
+    <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: center;">Crab Pool Security</p>
+    <p style="text-align: center;">$30.00 <button><a href="checkout.html">BUY</a></button></p>
+   </div>
+
+   <div class="imgdiv">
+    <img style="width: 100%; height: 270px;" src="images/Screenshot_19.png">
+    <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: center;">Crab Pool Security</p>
+    <p style="text-align: center;">$30.00 <button><a href="checkout.html">BUY</a></button></p>
+   </div>
+
+   <div class="imgdiv" style="margin-right: 0px;">
+    <img style="width: 100%; height: 270px;" src="images/Screenshot_27.png">
+    <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: center;">Crab Pool Security</p>
+    <p style="text-align: center;">$30.00 <button><a href="checkout.html">BUY</a></button></p>
+   </div>
+
+   <div class="btndowndiv">
+     <a href="#"><div class="boxnum">1</div></a>
+     <a href="#"><div class="boxnum">2</div></a>
+     <a href="#"><div class="boxnum">3</div></a>
+     <a href="#"><div class="boxnum"><i class="fa fa-long-arrow-right"></i></div></a>
+   </div>
+
+  </div>
+</div>
+
+<div class="clear"></div>
+
+<footer class="footer">
+  <div class="box1">
+    <a href="index.html"><img src="images/logo.png"></a>
+    <p>Address: 60-49 Road 11378 New York</p>
+    <p>Phone: +65 11.188.888</p>
+    <p>Email: christozaipha69@gmail.com</p>
+  </div>
+
+  <div class="box2">
+    <p style="margin-left: 0px; font-family: fantasy; font-weight: lighter; font-size: 18px; letter-spacing: 1px;">Useful Links</p>
+    <div class="box2a">
+      <ul style="list-style-type: none;">
+      <li><a style="text-decoration: none; color: black;" href="about.html">About our shop</a></li>
+      <li><a style="text-decoration: none; color: black;" href="faq.html">FAQs</a></li>
+      <li><a style="text-decoration: none; color: black;" href="conditions.html">Terms & Conditions</a></li>
+      <li><a style="text-decoration: none; color: black;" href="policy.html">Privacy policy</a></li>
+      <li><a style="text-decoration: none; color: black;" href="services.html">Services</a></li>
+    </ul>
+    </div>
+    <div class="box2b">
+      <ul style="list-style-type: none;">
+      <li><a style="text-decoration: none; color: black;" href="buyer.html">Buyer's Safety</a></li>
+      <li><a style="text-decoration: none; color: black;" href="track.html">Track Your Order</a></li>
+      <li><a style="text-decoration: none; color: black;" href="contact.html">Contact</a></li>
+      <li><a style="text-decoration: none; color: black;" href="join.html">Join Us</a></li>
+    </ul>
+    </div>   
+  </div>
+
+ <div class="box3">
+    <p style="font-family: fantasy; font-weight: lighter; font-size: 18px; letter-spacing: 1px;">Join Our Newsletter Now</p>
+    <p>Get E-mail updates about our latest shop and special offers.</p>
+    <input style="height: 40px; font-family: cursive; font-size: 15px; font-weight: bolder; width: 80%; border: 0.5px solid grey; padding-left: 20px; float: left;" type="text"placeholder="Enter your mail"><button style="height: 40px; font-family: fantasy; color: white; background-color: #7fad39; border: none; float: left;">SUBSCRIBE</button>
+
+    <div class="clear"></div>
+    
+    <a style="text-decoration: none; color: black;" href=""><div class="box3a"><i class="fa fa-facebook"></i></div></a>
+    <a style="text-decoration: none; color: black;" href=""><div class="box3a"><i class="fa fa-instagram"></i></div></a>
+    <a style="text-decoration: none; color: black;" href=""><div class="box3a"><i class="fa fa-twitter"></i></div></a>
+    <a style="text-decoration: none; color: black;" href=""><div class="box3a"><i class="fa fa-pinterest"></i></div></a>
+  </div>
+ <div class="clear"></div>
+
+ <div class="box4">
+   <h4>Copyright @ NNAMDI CHRISTUS - 9th Septemper, 2021. All rights reserved</h4>
+ </div>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SERVICES</title>
+ <link rel="stylesheet" type="text/css" href="ProjectCss/services.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+</head>
+<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 2000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myfunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+<body onload="myFunction()" style="margin:0;">
+<div id="loader"></div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+
+<header class="top">
+<div style="padding: 3px 0px 0px 20px;" class="div1"><i style="margin-right: 8px;" class="fa fa-envelope"></i>christozaipha69@gmail</div>
+<div style="padding: 3px 10px 0px 20px;" class="div2">Free Shipping for all Order of $99<a style="text-decoration: none; color: black;" href=""><i style="margin-left: 290px;" class="fa fa-facebook"></i><i style="margin-left: 30px;" class="fa fa-twitter"></i><i style="margin-left: 30px;" class="fa fa-instagram"></i><i style="margin-left: 30px;" class="fa fa-pinterest"></i></a></div>
+<div style="padding: 3px 10px 0px 10px;" class="div3"><i class="fa fa-envelope"></i>christozaipha69@gmail</div>
+<div style="padding: 3px 10px 0px 10px;" class="div4"><a style="text-decoration: none; color: black;" href="join.html"><i style="margin-right: 5px;" class="fa fa-user"></i>SignUp</a></div>
+</header>
+
+<div class="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+      <div class="nav-title">
+        <a href="index.html"><img style="margin-top: 0px;" src="images/Snapshot.png"></a>
+      </div>
+    </div>
+   
+<script>
+function myFunctionss() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+ <div class="topnav" id="myTopnav">
+  <a href="index.html" class="">HOME</a>
+  <a href="shop.html">SHOP</a>
+  <div class="sdropdown">
+    <button class="sdropbtn">PAGES</button>
+    <div class="sdropdown-content">
+     <a href="shopdetails.html">Shop Details</a>
+      <a href="shoppingcart.html">Shopping Cart</a>
+      <a href="checkout.html">Check out</a>
+      <a href="blogdetails.html">Blog Detials</a>
+    </div>
+  </div>
+  <a href="about.html">ABOUT US</a>
+  <a href="contact.html" style="margin-right: 170px;">CONTACT US</a>
+
+    <a href=""><i class="fa fa-heart"></i></a>
+    <a href=""><i class="fa fa-shopping-bag"></i></a>
+
+  <div class="item">
+    <span style="font-family: cursive; font-size: 13px; margin-left: 20px;">item:</span><b style="margin-left: 3px; font-size: 13px; letter-spacing: 1px; font-weight: lighter;">$150.00</b>
+  </div>
+
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunctionss()">&#9776;</a>
+</div>
+</div>
+
+
+ <section class="section1">
+  <div class="rec1">
+  <div class="dropdown">
+  <span onclick="myfunction()" class="dropbtn"><i style="margin-right: 8px;" class="fa fa-bars"></i>All departments<i style="margin-left: 10px;" class="fa fa-angle-down"></i></span>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home">Fresh Meat</a>
+    <a href="#about">Vegetabes</a>
+    <a href="#contact">Fruit & Nut Gifts</a>
+    <a href="#home">Fresh Berries</a>
+    <a href="#about">Ocean Foods</a>
+    <a href="#contact">Butter & Egg</a>
+    <a href="#home">Fast Food</a>
+    <a href="#about">Fresh Onion</a>
+    <a href="#contact">Papaya & Crisps</a>
+    <a href="#about">Oatmeal</a>
+    <a href="#contact">Fresh Bananas</a>
+  </div>
+</div>
+</div>
+</section>
+
+<section class="section2">
+  <div class="searchcontainer">
+    <select class="dropdown2 option" style="outline: 0px; font-family: fantasy;">
+      <option style="background-color: #7fad39; color: white;">All</option>
+      <option style="background-color: #7fad39; color: white;">Fast Foods</option>
+      <option style="background-color: #7fad39; color: white;">Beverages</option>
+      <option style="background-color: #7fad39; color: white;">Fruits</option>
+      <option style="background-color: #7fad39; color: white;">Dried Fruits</option>
+      <option style="background-color: #7fad39; color: white;">Drinks</option>
+    </select>
+      <input type="search" name="" class="search" placeholder="What do you need?">
+  </div>
+
+  <button class="button">SEARCH</button>
+
+  <div class="phoneicon"><i class="fa fa-phone"></i></div>
+  <div class="container">
+   <span style="">+65 11.188.888</span><br>
+   <span style="font-family: cursive; font-size: 13px; font-weight: bolder;">support 24/7 time</span><br>
+  </div>
+</section>
+
+<section class="sectioncontact" style="background-image: url(images/tomato5.jpg); background-size: 100% 100%;">
+  <div style="height: 150px; width: 100%; background-color: rgba(0,0,0,0.47);">
+    <div style="text-align: center; font-size: 30px; color: white; word-spacing: 5px; padding: 30px 0px 0px 0px; margin-bottom: 5px;">Our Service</div>
+
+    <div style="text-align: center; font-size: 20px; color: white;">
+      <span style="font-family: cursive; font-weight: bolder; font-size: 16px;">Our Services</span>
+    </div>
+  </div>
+</section>
+
+<div class="clear"></div>
+
+<button class="servicebtn">
+  THESE ARE SOME OF  OUR SERVICES THAT PUTS US IN NIGERIA'S ONLINE SHOPPING IVY LEAGUE LIST.
+</button>
+
+<section class="SRV">
+
+  <div class="SRV1">
+    <p>
+      1. Payment
+    </p>
+    <span>
+      While availing any of the payment method(s) offered at <b style="color: #7fad39;">Ogani.com</b>, <b style="color: #7fad39;">Ogani.com</b> will not be responsible or assume any liability, whatsoever in respect of any loss or damage arising directly or indirectly to you due to:
+      <ul>
+        <li>Lack of authorization for any transaction(s), or</li>
+        <li>Exceeding the preset limit mutually agreed by you and between your "Bank(s)", or</li>
+        <li>Any payment issues arising out of the transaction, or</li>
+        <li>Decline of transaction for any other reason/s.</li>
+      </ul>
+      All payments made against the purchases/services on <b style="color: #7fad39;">Ogani.com</b> by you, shall be compulsorily in Nigerian Naira acceptable by the Central Bank of Nigeria. <b style="color: #7fad39;">Ogani.com</b> does not accept any other form of currency with respect to the purchases made on <b style="color: #7fad39;">Ogani</b>.
+    </span>
+  </div>
+
+  <div class="SRV2">
+    <p>
+      2. Wallet
+    </p>
+    <span>
+      The Wallet ("Wallet") is a pre-paid payment instrument which is associated with your <b style="color: #7fad39;">Ogani.com</b> account. You can maintain a balance of money with <b style="color: #7fad39;">Ogani.com</b> and redeem it at your convenience.
+
+      <b style="color: #7fad39;">Ogani.com</b> will not pay any interest on the amount maintained by you in your Wallet.
+
+      Refill of Wallet: Your Wallet can be refilled, using any of the pre-paid payment options only. You will be able to recharge your Wallet up to an amount of N1,000,000 in one instance. There is no need to maintain a minimum balance.
+
+      Refund of Wallet Amount: Your wallet comprises of three types of balances - Store credit (which is a credit granted by <b style="color: #7fad39;">Ogani.com</b> typically in lieu of a cancelled order), Topped-up balance (which is a prepaid amount that you added to wallet to pay for future orders on <b style="color: #7fad39;">Ogani.com</b>) and Promotional balance (which is credit granted by <b style="color: #7fad39;">Ogani.com</b> purely for promotional or goodwill purposes). Topped-up balance (prepaid amount) as well as the Promotional balance added to the Wallet will be non-refundable While Store credit will continue to be entirely refundable.
+
+      Limitation of Liability: In no event will <b style="color: #7fad39;">Ogani.com</b> be liable for any special, incidental, indirect or consequential damages or losses of any kind, arising from the use of Wallet or association with the Wallet.
+    </span>
+  </div>
+
+  <div class="SRV3">
+    <p>
+      3. Cancellation of order
+    </p>
+    <span>
+      <b style="color: #7fad39;">Ogani.com</b> reserves the right to cancel any order without any explanation for doing so, under situation where <b style="color: #7fad39;">Ogani.com</b> is not able to meet the requirement of the order placed or order so placed/cancelled does not comply with the <b style="color: #7fad39;">Ogani.com</b> policy or for any reason. However, <b style="color: #7fad39;">Ogani.com</b> will ensure that any communication of cancellation of an order is intimated within appropriate time to the concerned person and any applicable refund, will be made in reasonable time.
+
+      Note that in the event of cancellation of a ‘pay on delivery’ orders, <b style="color: #7fad39;">Ogani</b> will not be liable in any form where the customer proceeds to receive orders following an earlier cancellation.
+    </span>
+  </div>
+
+  <div class="SRV4">
+    <p>
+     4. Risk of loss
+    </p>
+    <span>
+      All items purchased from <b style="color: #7fad39;">Ogani.com</b> are made pursuant to a shipment contract. This means that the Risk of Loss shall remain with Konga until the item is transferred to You. In the event that the items are damaged after receipt, the risk falls on the customer.
+    </span>
+  </div>
+
+  <div class="SRV5">
+    <p>
+      5. Pricing and Typographical error
+    </p>
+    <span>
+      If <b style="color: #7fad39;">Ogani.com</b> comes across any difference in pricing resulting from typographic errors with regards to pricing or product/service information, <b style="color: #7fad39;">Ogani.com</b> shall have the right to rectify the same or cancel the order(s) and refund monies, if any, collected from the customer within 10-15 business days of such corrective action taken. The mode of refund will be the same as at the time of placing the order. Cash on Delivery order refunds will be done by cheque.
+    </span>
+  </div>
+
+  <button class="SRVbtn">
+    <a href="shop.html" style="text-decoration: none; color: white;">SHOP NOW AT OGANI !!!</a>
+  </button>
+  
+</section>
+
+
+<div class="clear"></div>
+
+<footer class="footer">
+  <div class="box1">
+    <a href="index.html"><img src="images/logo.png"></a>
+    <p>Address: 60-49 Road 11378 New York</p>
+    <p>Phone: +65 11.188.888</p>
+    <p>Email: christozaipha69@gmail.com</p>
+  </div>
+
+  <div class="box2">
+    <p style="margin-left: 0px; font-family: fantasy; font-weight: lighter; font-size: 18px; letter-spacing: 1px;">Useful Links</p>
+    <div class="box2a">
+      <ul style="list-style-type: none;">
+      <li><a style="text-decoration: none; color: black;" href="about.html">About our shop</a></li>
+      <li><a style="text-decoration: none; color: black;" href="faq.html">FAQs</a></li>
+      <li><a style="text-decoration: none; color: black;" href="conditions.html">Terms & Conditions</a></li>
+      <li><a style="text-decoration: none; color: black;" href="policy.html">Privacy policy</a></li>
+      <li><a style="text-decoration: none; color: black;" href="services.html">Services</a></li>
+    </ul>
+    </div>
+    <div class="box2b">
+      <ul style="list-style-type: none;">
+      <li><a style="text-decoration: none; color: black;" href="buyer.html">Buyer's Safety</a></li>
+      <li><a style="text-decoration: none; color: black;" href="track.html">Track Your Order</a></li>
+      <li><a style="text-decoration: none; color: black;" href="contact.html">Contact</a></li>
+      <li><a style="text-decoration: none; color: black;" href="join.html">Join Us</a></li>
+    </ul>
+    </div>  
+  </div>
+
+ <div class="box3">
+    <p style="font-family: fantasy; font-weight: lighter; font-size: 18px; letter-spacing: 1px;">Join Our Newsletter Now</p>
+    <p>Get E-mail updates about our latest shop and special offers.</p>
+    <input style="height: 40px; font-family: cursive; font-size: 15px; font-weight: bolder; width: 80%; border: 0.5px solid grey; padding-left: 20px; float: left;" type="text"placeholder="Enter your mail"><button style="height: 40px; font-family: fantasy; color: white; background-color: #7fad39; border: none; float: left;">SUBSCRIBE</button>
+
+    <div class="clear"></div>
+    
+    <a style="text-decoration: none; color: black;" href=""><div class="box3a"><i class="fa fa-facebook"></i></div></a>
+    <a style="text-decoration: none; color: black;" href=""><div class="box3a"><i class="fa fa-instagram"></i></div></a>
+    <a style="text-decoration: none; color: black;" href=""><div class="box3a"><i class="fa fa-twitter"></i></div></a>
+    <a style="text-decoration: none; color: black;" href=""><div class="box3a"><i class="fa fa-pinterest"></i></div></a>
+  </div>
+ <div class="clear"></div>
+
+ <div class="box4">
+   <h4>Copyright @ NNAMDI CHRISTUS - 9th Septemper, 2021. All rights reserved</h4>
+ </div>
+</footer>
+
+</body>
+</html>

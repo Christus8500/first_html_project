@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BLOG DETAILS</title>
+  <link rel="stylesheet" type="text/css" href="ProjectCss/blogdetails.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+</head>
+<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 2000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myfunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+<body onload="myFunction()" style="margin:0;">
+<div id="loader"></div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+
+   <header class="top">
+    <div style="padding: 3px 0px 0px 20px;" class="div1"><i style="margin-right: 8px;" class="fa fa-envelope"></i>christozaipha69@gmail</div>
+    <div style="padding: 3px 10px 0px 20px;" class="div2">Free Shipping for all Order of $99<a style="text-decoration: none; color: black;" href=""><i style="margin-left: 290px;" class="fa fa-facebook"></i><i style="margin-left: 30px;" class="fa fa-twitter"></i><i style="margin-left: 30px;" class="fa fa-instagram"></i><i style="margin-left: 30px;" class="fa fa-pinterest"></i></a></div>
+    <div style="padding: 3px 10px 0px 10px;" class="div3"><i class="fa fa-envelope"></i>christozaipha69@gmail</div>
+    <div style="padding: 3px 10px 0px 10px;" class="div4"><a style="text-decoration: none; color: black;" href="join.html"><i style="margin-right: 5px;" class="fa fa-user"></i>SignUp</a></div>
+  </header>
+
+  <div class="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+      <div class="nav-title">
+        <a href="index.html"><img style="margin-top: 0px;" src="images/Snapshot.png"></a>
+      </div>
+    </div>
+   
+  <script>
+function myFunctionss() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+ <div class="topnav" id="myTopnav">
+  <a href="index.html" class="">HOME</a>
+  <a href="shop.html">SHOP</a>
+  <div class="sdropdown">
+    <button class="sdropbtn">PAGES</button>
+    <div class="sdropdown-content">
+     <a href="shopdetails.html">Shop Details</a>
+      <a href="shoppingcart.html">Shopping Cart</a>
+      <a href="checkout.html">Check out</a>
+      <a href="blogdetails.html">Blog Detials</a>
+    </div>
+  </div>
+  <a href="about.html">ABOUT US</a>
+  <a href="contact.html" style="margin-right: 170px;">CONTACT US</a>
+
+    <a href=""><i class="fa fa-heart"></i></a>
+    <a href=""><i class="fa fa-shopping-bag"></i></a>
+
+  <div class="item">
+    <span style="font-family: cursive; font-size: 13px; margin-left: 20px;">item:</span><b style="margin-left: 3px; font-size: 13px; letter-spacing: 1px; font-weight: lighter;">$150.00</b>
+  </div>
+
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunctionss()">&#9776;</a>
+</div>
+</div>
+
+ <section class="section1">
+  <div class="rec1">
+  <div class="dropdown">
+  <span onclick="myfunction()" class="dropbtn"><i style="margin-right: 8px;" class="fa fa-bars"></i>All departments<i style="margin-left: 10px;" class="fa fa-angle-down"></i></span>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home">Fresh Meat</a>
+    <a href="#about">Vegetabes</a>
+    <a href="#contact">Fruit & Nut Gifts</a>
+    <a href="#home">Fresh Berries</a>
+    <a href="#about">Ocean Foods</a>
+    <a href="#contact">Butter & Egg</a>
+    <a href="#home">Fast Food</a>
+    <a href="#about">Fresh Onion</a>
+    <a href="#contact">Papaya & Crisps</a>
+    <a href="#about">Oatmeal</a>
+    <a href="#contact">Fresh Bananas</a>
+  </div>
+</div>
+</div>
+</section>
+
+<section class="section2">
+  <div class="searchcontainer">
+    <select class="dropdown2 option" style="outline: 0px; font-family: fantasy;">
+      <option style="background-color: #7fad39; color: white;">All</option>
+      <option style="background-color: #7fad39; color: white;">Fast Foods</option>
+      <option style="background-color: #7fad39; color: white;">Beverages</option>
+      <option style="background-color: #7fad39; color: white;">Fruits</option>
+      <option style="background-color: #7fad39; color: white;">Dried Fruits</option>
+      <option style="background-color: #7fad39; color: white;">Drinks</option>
+    </select>
+      <input style="font-family: cursive; font-size: 15px;" type="search" name="" class="search" placeholder="What do you need ?">
+  </div>
+
+  <button class="button">SEARCH</button>
+
+  <div class="phoneicon"><i class="fa fa-phone"></i></div>
+  <div class="container">
+   <span style="">+65 11.188.888</span><br>
+   <span style="font-family: cursive; font-size: 15px; font-weight: bolder;">support 24/7 time</span><br>
+  </div>
+</section>
+
+  <section class="sectioncontact" style="background-image: url(images/tomato5.jpg); background-size: 100% 100%;">
+    <div style="height: 100%; width: 100%; background-color: rgba(0,0,0,0.47); padding: 8%;">
+      <div style="text-align: center; font-size: 40px; color: white; letter-spacing: 0.5px; padding: 0px 0px 0px 0px; margin-bottom: 5px;">The Moment You Need To Remove Garlic From The Menu</div>
+
+      <div style="text-align: center; font-size: 20px; color: white; letter-spacing: 0.5px; word-spacing: 4px;">
+        <span style="font-family: cursive; font-weight: bolder; font-size: 15px;">By Michael Scofield | January 14, 2019 | 8 Comments</span>
+      </div>
+    </div>
+  </section>
+
+<section class="sectionI">
+    <div class="sectionIa" style="background-image: url(images/strawberry.png);"></div>
+    <div class="sectionIb">
+      <p>
+        Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Sed porttitor lectus nibh. Donec sollicitudin molestie malesuada. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Proin eget tortor risus. Donec rutrum congue leo eget malesuada. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Donec sollicitudin molestie malesuada. Nulla quis lorem ut libero malesuada feugiat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+      </p>
+      <p style="font-family: fantasy; font-size: 30px; color: black; line-height: 45px; font-weight: lighter;">
+        The corner window forms a place within a place that is a resting point within the large space.
+      </p>
+      <p>
+        The study area is located at the back with a view of the vast nature. Together with the other buildings, a congruent story has been managed in which the whole has a reinforcing effect on the components. The use of materials seeks connection to the main house, the adjacent stables.
+      </p>
+    </div>
+    <div class="sectionIc">
+
+      <img src="images/image.png">
+      <div class="ctext">
+        <p>Michael Scofield</p>
+        <p style="color: grey; font-family: cursive; font-weight: bolder; font-size: 15px;">Admin</p>
+      </div>
+
+    </div>
+
+    <div class="sectionId">
+      <p>Categories: <span> Food</span></p>
+      <p>Tags: <span> All, Trending, Cooking, Healthy Food, Life Style</span></p>
+      <p>
+        <a href=""><i class="fa fa-facebook"></i></a>
+        <a href=""><i class="fa fa-twitter"></i></a>
+        <a href=""><i class="fa fa-google-plus"></i></a>
+        <a href=""><i class="fa fa-linkedin"></i></a>
+        <a href=""><i class="fa fa-envelope"></i></a>
+      </p>
+    </div>
+</section>
+
+  <section class="sectionII">
+    <input style="border: 1px solid lightgrey; height: 40px; width: 100%;" type="search" name="" placeholder="Search...">
+    <div class="sectionIIa">
+
+      <div class="categories">
+        <span style="font-size: 22px; font-family: fantasy;">Categories</span>
+        <li><a href="#home">All</li>
+        <li><a href="#about">Beauty (20)</a></li>
+        <li><a href="#contact">Food (5)</a></li>
+        <li><a href="#home">Livestyle (9)</a></li>
+        <li><a href="#about">Travel (10)</a></li>
+      </div>
+
+    </div>
+
+    <div class="sectionIIb">
+      <div style="font-size: 22px; letter-spacing: 1px;">Recent News</div>
+
+      <div class="recentnewsa">
+            
+         <div style="height: 85px; width: 100%; margin: 0px 0px 10px 0px;">
+          <img src="images/straw.png" style="width: 25%; float: left;">
+           <span style="text-align: left;">09 Kinds Of Vegetables<br> Protect The Liver</span><br>
+           <p style="font-family: cursive; font-weight: bolder; font-size: 10px; text-align: left; color: grey;"><b>MAR 05, 2019</b></p>
+         </div>
+
+         <div style="height: 85px; width: 100%; margin: 0px 0px 10px 0px;">
+          <img src="images/vegetables.png" style="width: 25%; float: left;">
+           <span style="text-align: left;">Tips You To Balance<br> Nutrition Meal Day</span><br>
+           <p style="font-family: cursive; font-weight: bolder; font-size: 10px; text-align: left; color: grey;"><b>MAR 05, 2019</b></p>
+         </div>
+
+         <div style="height: 85px; width: 100%; margin: 0px 0px 10px 0px;">
+          <img src="images/Screenshot_9.png" style="width: 25%; float: left;">
+           <span style="text-align: left;">4 Principles Help You Lose<br> Weight With Vegetables</span><br>
+           <p style="font-family: cursive; font-weight: bolder; font-size: 10px; text-align: left; color: grey;"><b>MAR 05, 2019</b></p>
+         </div>
+
+      </div>
+    </div>
+
+    <div class="sectionIIc">
+
+    <div class="searchby">
+      <span style="font-size: 22px; font-family: fantasy;">Search By</span>
+      <div style="width: 100%; margin-top: 15px;">
+        <button>Apple</button>
+        <button>Beauty</button>
+        <button>Vegetables</button>
+        <button>Fruit</button>
+        <button>Healthy Food</button>
+        <button>Lifestyle</button>
+      </div>
+    </div>
+
+    </div>
+  </section>
+
+  <section class="sectionIII">
+    <h1 style="font-family: fantasy; letter-spacing: 0.5px; font-size: 30px; text-align: center; color: black; word-spacing: 5px;">Post You May Like</h1>
+    <div class="boxA">
+      <div class="boximg1">
+        <img src="images/Screenshot_16.png">
+      </div>
+      <div class="boxA1">
+       <p><i class="fa fa-calendar-o" style="margin: 0px 5px 0px 0px;"></i>May, 4 2019<i class="fa fa-comment-o" style="margin: 0px 0px 0px 20px;"></i> 5</p>
+        <a href="" style="text-decoration: none; color: black;"><span style="font-size: 20px; font-family: fantasy; word-spacing: 5px;">Cooking tips make cooking simple</span></a>
+        <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat</p>
+      </div>
+    </div>
+
+    <div class="boxB">
+      <div class="boximg2">
+        <img src="images/Screenshot_17.png">
+      </div>
+      <div class="boxB1">
+        <p><i class="fa fa-calendar-o" style="margin: 0px 5px 0px 0px;"></i>May, 4 2019<i class="fa fa-comment-o" style="margin: 0px 0px 0px 20px;"></i> 5</p>
+        <a href="" style="text-decoration: none; color: black;"><span style="font-size: 20px; font-family: fantasy; word-spacing: 5px;">6 ways to prepare breakfast for 30</span></a>
+        <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat</p>
+      </div>
+    </div>
+
+    <div class="boxC">
+      <div class="boximg3">
+        <img src="images/Screenshot_18.png">
+      </div>
+      <div class="boxC1">
+        <p><i class="fa fa-calendar-o" style="margin: 0px 5px 0px 0px;"></i>May, 4 2019<i class="fa fa-comment-o" style="margin: 0px 0px 0px 20px;"></i> 5</p>
+        <a href="" style="text-decoration: none; color: black;"><span style="font-size: 20px; font-family: fantasy; word-spacing: 5px;">Visit the clean farm in the US</span></a>
+        <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="clear"></div>
+
+
+<footer class="footer">
+  <div class="box1">
+    <a href="index.html"><img src="images/logo.png"></a>
+    <p>Address: 60-49 Road 11378 New York</p>
+    <p>Phone: +65 11.188.888</p>
+    <p>Email: christozaipha69@gmail.com</p>
+  </div>
+
+  <div class="box2">
+    <p style="margin-left: 0px; font-family: fantasy; font-weight: lighter; font-size: 18px; letter-spacing: 1px;">Useful Links</p>
+    <div class="box2a">
+      <ul style="list-style-type: none;">
+      <li><a style="text-decoration: none; color: black;" href="about.html">About our shop</a></li>
+      <li><a style="text-decoration: none; color: black;" href="faq.html">FAQs</a></li>
+      <li><a style="text-decoration: none; color: black;" href="conditions.html">Terms & Conditions</a></li>
+      <li><a style="text-decoration: none; color: black;" href="policy.html">Privacy policy</a></li>
+      <li><a style="text-decoration: none; color: black;" href="services.html">Services</a></li>
+    </ul>
+    </div>
+    <div class="box2b">
+      <ul style="list-style-type: none;">
+      <li><a style="text-decoration: none; color: black;" href="buyer.html">Buyer's Safety</a></li>
+      <li><a style="text-decoration: none; color: black;" href="track.html">Track Your Order</a></li>
+      <li><a style="text-decoration: none; color: black;" href="contact.html">Contact</a></li>
+      <li><a style="text-decoration: none; color: black;" href="join.html">Join Us</a></li>
+    </ul>
+    </div>    
+  </div>
+
+ <div class="box3">
+    <p style="font-family: fantasy; font-weight: lighter; font-size: 18px; letter-spacing: 1px;">Join Our Newsletter Now</p>
+    <p>Get E-mail updates about our latest shop and special offers.</p>
+    <input style="height: 40px; font-family: cursive; font-size: 15px; font-weight: bolder; width: 80%; border: 0.5px solid grey; padding-left: 20px; float: left;" type="text"placeholder="Enter your mail"><button style="height: 40px; font-family: fantasy; color: white; background-color: #7fad39; border: none; float: left;">SUBSCRIBE</button>
+
+    <div class="clear"></div>
+    
+    <a style="text-decoration: none; color: black;" href=""><div class="box3a"><i class="fa fa-facebook"></i></div></a>
+    <a style="text-decoration: none; color: black;" href=""><div class="box3a"><i class="fa fa-instagram"></i></div></a>
+    <a style="text-decoration: none; color: black;" href=""><div class="box3a"><i class="fa fa-twitter"></i></div></a>
+    <a style="text-decoration: none; color: black;" href=""><div class="box3a"><i class="fa fa-pinterest"></i></div></a>
+  </div>
+ <div class="clear"></div>
+
+ <div class="box4">
+   <h4>Copyright @ NNAMDI CHRISTUS - 9th Septemper, 2021. All rights reserved</h4>
+ </div>
+</footer>
+
+</body>
+</html>

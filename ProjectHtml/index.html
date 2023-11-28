@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HOME</title>
+  <link rel="stylesheet" type="text/css" href="ProjectCss/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 2000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myfunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+<body onload="myFunction()" style="margin:0;">
+<div id="loader"></div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+
+   <header class="top">
+    <div class="div1"><i style="margin-right: 8px;" class="fa fa-envelope"></i>christozaipha69@gmail</div>
+    <div class="div2">Free Shipping for all Order of $99<a style="text-decoration: none; color: black;" href=""><i style="margin-left: 45%;" class="fa fa-facebook"></i><i style="margin-left: 5%;" class="fa fa-twitter"></i><i style="margin-left: 5%;" class="fa fa-instagram"></i><i style="margin-left: 5%;" class="fa fa-pinterest"></i></a></div>
+    <div class="div3"><i class="fa fa-envelope"></i>christozaipha69@gmail</div>
+    <div class="div4"><a style="text-decoration: none; color: black;" href="join.html"><i style="margin-right: 5px;" class="fa fa-user"></i>SignUp</a></div>
+  </header>
+
+  <div class="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+      <div class="nav-title">
+        <a href="index.html"><img style="margin-top: 0px; height: 100%; width: 100%;" src="images/Snapshot.png"></a>
+      </div>
+    </div>
+   
+  <script>
+function myFunctionss() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+ <div class="topnav" id="myTopnav">
+  <a href="#"></a>
+  <a href="index.html" class="">HOME</a>
+  <a href="shop.html">SHOP</a>
+  <div class="sdropdown">
+    <button class="sdropbtn">PAGES</button>
+    <div class="sdropdown-content">
+     <a href="shopdetails.html">Shop Details</a>
+      <a href="shoppingcart.html">Shopping Cart</a>
+      <a href="checkout.html">Check out</a>
+      <a href="blogdetails.html">Blog Detials</a>
+    </div>
+  </div>
+  <a href="about.html">ABOUT US</a>
+  <a href="contact.html" >CONTACT US</a>
+
+    <a href=""><i class="fa fa-heart" style="margin-left: 170px;"></i></a>
+    <a href=""><i class="fa fa-shopping-bag"></i></a>
+
+  <div class="item">
+    <span style="font-family: cursive; font-size: 13px; margin-left: 20px;">item:</span><b style="margin-left: 3px; font-size: 13px; letter-spacing: 1px; font-weight: lighter;">$150.00</b>
+  </div>
+
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunctionss()">&#9776;</a>
+</div>
+</div>
+
+
+ <section class="section1">
+  <div class="rec1">
+  <div class="dropdown">
+  <span onclick="myfunction()" class="dropbtn" style="display: block"><i style="margin-right: 8px; " class="fa fa-bars"></i>All departments<i style="margin-left: 10px;" class="fa fa-angle-down"></i></span>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home">Fresh Meat</a>
+    <a href="#about">Vegetabes</a>
+    <a href="#contact">Fruit & Nut Gifts</a>
+    <a href="#home">Fresh Berries</a>
+    <a href="#about">Ocean Foods</a>
+    <a href="#contact">Butter & Egg</a>
+    <a href="#home">Fast Food</a>
+    <a href="#about">Fresh Onion</a>
+    <a href="#contact">Papaya & Crisps</a>
+    <a href="#about">Oatmeal</a>
+    <a href="#contact">Fresh Bananas</a>
+  </div>
+</div>
+</div>
+
+<div class="section1i" style="background-image: url(images/shop2a.png);">
+  <!--  <div style="text-align: center; width: 100%; height: 40px; background-color: #7fad39; opacity: 0.9;">
+     <h1 style="font-size: 30px; font-weight: lighter; color: white; opacity: 0.99;">OGANI SHOP</h1>
+   </div> -->
+</div>
+
+</section>
+
+<section class="section2">
+  <div class="searchcontainer">
+    <select class="dropdown2 option" style="outline: 0px; border: none;">
+      <option style="background-color: #7fad39; color: white;">All</option>
+      <option style="background-color: #7fad39; color: white;">Fast Foods</option>
+      <option style="background-color: #7fad39; color: white;">Beverages</option>
+      <option style="background-color: #7fad39; color: white;">Fruits</option>
+      <option style="background-color: #7fad39; color: white;">Dried Fruits</option>
+      <option style="background-color: #7fad39; color: white;">Drinks</option>
+    </select>
+      <input type="text" name="" class="search" placeholder="What do you need?" required="">
+  </div>
+
+  <button class="button">SEARCH</button>
+
+  <div class="phoneicon"><i class="fa fa-phone"></i></div>
+  <div class="container">
+   <span style="">+65 11.188.888</span><br>
+   <span class="contd" style="font-family: cursive; font-weight: bolder;">support 24/7 time</span><br>
+  </div>
+</section>
+
+<section class="section3">
+  <a href="shop.html"><img class="img" src="images/Snapshot2.png"></a>
+</section>
+<div class="clear"></div>
+
+<!-- Top slide -->
+<div class="slide">
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+   <img class="img1" src="images/Screenshot_11.png" style="margin-left: 0px;">
+   <img class="img1" src="images/Screenshot_12.png">
+   <img class="img1" src="images/Screenshot_13.png">
+   <img class="img1" src="images/Screenshot_14.png">
+</div>
+
+<div class="mySlides fade">
+   <img class="img1" src="images/Screenshot_12.png" style="margin-left: 0px;">
+   <img class="img1" src="images/Screenshot_13.png">
+   <img class="img1" src="images/Screenshot_14.png">
+   <img class="img1" src="images/Screenshot_11.png">
+</div>
+
+<div class="mySlides fade">
+   <img class="img1" src="images/Screenshot_13.png" style="margin-left: 0px;">
+   <img class="img1" src="images/Screenshot_14.png">
+   <img class="img1" src="images/Screenshot_11.png">
+   <img class="img1" src="images/Screenshot_12.png">
+</div>
+
+<div class="mySlides fade">
+   <img class="img1" src="images/Screenshot_14.png" style="margin-left: 0px;">
+   <img class="img1" src="images/Screenshot_11.png">
+   <img class="img1" src="images/Screenshot_12.png">
+   <img class="img1" src="images/Screenshot_13.png">
+</div>
+
+</div>
+</div>
+<!-- Top Slide -->
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  
+  slides[slideIndex-1].style.display = "block";  
+  setTimeout(showSlides, 4000);
+}
+</script>
+
+<h1 style="text-align: center; font-size: 30px; letter-spacing: 1.5px;">Featured Products</h1>
+<div class="recontainer">
+
+    <input type="radio" name="tabs" id="tab1" checked />
+  <label for="tab1" class="alltab">All</label>
+
+  <input type="radio" name="tabs" id="tab2" />
+  <label for="tab2">Fruits</label>
+
+  <input type="radio" name="tabs" id="tab3" />
+  <label for="tab3">Fresh meat</label>
+
+  <input type="radio" name="tabs" id="tab4" />
+  <label for="tab4">Vegetables</label>
+
+  <input type="radio" name="tabs" id="tab5" />
+  <label for="tab5">Fast Food</label>
+
+
+  <div class="tab content1">
+
+      <div class="rec2a">
+        <img style="width: 100%; height: 75%;" src="images/Screenshot_7.png">
+        <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: center;">Crab Pool Security</p>
+        <p style="text-align: center;">$30.00 <button><a href="checkout.html">BUY</a></button></p>
+      </div> 
+
+      <div class="rec2a">
+        <img style="width: 100%; height: 75%;" src="images/Screenshot_8.png">
+        <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: center;">Crab Pool Security</p>
+        <p style="text-align: center;">$30.00 <button><a href="checkout.html">BUY</a></button></p>
+      </div>
+
+        <div class="rec2a">
+        <img style="width: 100%; height: 75%;" src="images/Screenshot_9.png">
+        <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: center;">Crab Pool Security</p>
+        <p style="text-align: center;">$30.00 <button><a href="checkout.html">BUY</a></button></p>
+        </div>
+
+        <div class="rec2a">
+        <img style="width: 100%; height: 75%;" src="images/Screenshot_10.png">
+        <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: center;">Crab Pool Security</p>
+        <p style="text-align: center;">$30.00 <button><a href="checkout.html">BUY</a></button></p>
+      </div>
+
+        <div class="rec2a">
+        <img style="width: 100%; height: 75%;" src="images/Screenshot_6.png">
+        <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: center;">Crab Pool Security</p>
+        <p style="text-align: center;">$30.00 <button><a href="checkout.html">BUY</a></button></p>
+      </div>
+
+      <div class="rec2a">
+        <img style="width: 100%; height: 75%;" src="images/Screenshot_3.png">
+        <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: center;">Crab Pool Security</p>
+        <p style="text-align: center;">$30.00 <button><a href="checkout.html">BUY</a></button></p>
+      </div>
+
+      <div  class="rec2a">
+        <img style="width: 100%; height: 75%;" src="images/Screenshot_4.png">
+        <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: center;">Crab Pool Security</p>
+        <p style="text-align: center;">$30.00 <button><a href="checkout.html">BUY</a></button></p>
+      </div>
+
+      <div class="rec2a">
+        <img style="width: 100%; height: 75%;" src="images/Screenshot_34.png">
+        <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: center;">Crab Pool Security</p>
+        <p style="text-align: center;">$30.00 <button><a href="checkout.html">BUY</a></button></p>
+      </div>
+
+  </div>
+
+  <div class="tab content2">
+    <div class="rec2a">
+        <img style="width: 100%; height: 75%;" src="images/Screenshot_8.png">
+        <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: center;">Crab Pool Security</p>
+        <p style="text-align: center;">$30.00 <button><a href="checkout.html">BUY</a></button></p>
+      </div>
+
+        <div class="rec2a">
+        <img style="width: 100%; height: 75%;" src="images/Screenshot_9.png">
+        <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: center;">Crab Pool Security</p>
+        <p style="text-align: center;">$30.00 <button><a href="checkout.html">BUY</a></button></p>
+        </div>
+
+        <div class="rec2a">
+        <img style="width: 100%; height: 75%;" src="images/Screenshot_10.png">
+        <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: center;">Crab Pool Security</p>
+        <p style="text-align: center;">$30.00 <button><a href="checkout.html">BUY</a></button></p>
+      </div>
+
+        <div class="rec2a">
+        <img style="width: 100%; height: 75%;" src="images/Screenshot_6.png">
+        <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: center;">Crab Pool Security</p>
+        <p style="text-align: center;">$30.00 <button><a href="checkout.html">BUY</a></button></p>
+      </div>
+
+      <div  class="rec2a">
+        <img style="width: 100%; height: 75%;" src="images/Screenshot_4.png">
+        <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: center;">Crab Pool Security</p>
+        <p style="text-align: center;">$30.00 <button><a href="checkout.html">BUY</a></button></p>
+      </div>
+    
+  </div>
+
+  <div class="tab content3">
+    <div class="rec2a">
+        <img style="width: 100%; height: 75%;" src="images/Screenshot_7.png">
+        <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: center;">Crab Pool Security</p>
+        <p style="text-align: center;">$30.00 <button><a href="checkout.html">BUY</a></button></p>
+      </div>
+  </div>
+
+  <div class="tab content4">
+    <div class="rec2a">
+        <img style="width: 100%; height: 75%;" src="images/Screenshot_34.png">
+        <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: center;">Crab Pool Security</p>
+        <p style="text-align: center;">$30.00 <button><a href="checkout.html">BUY</a></button></p>
+      </div>
+  </div>
+
+  <div class="tab content5">
+    <div class="rec2a">
+        <img style="width: 100%; height: 75%;" src="images/Screenshot_3.png">
+        <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: center;">Crab Pool Security</p>
+        <p style="text-align: center;">$30.00 <button><a href="checkout.html">BUY</a></button></p>
+    </div>
+  </div>
+
+</div>
+
+<div class="clear"></div>
+
+<div class="rec3">
+  <a href="shop.html"> <img style="width: 100%; height: 270px;" src="images/Screenshot_1.png"></a>
+</div>
+
+<div class="rec4">
+  <a href="shop.html"> <img style="width: 100%; height: 270px;" src="images/Screenshot_2.png"></a>
+</div>
+
+<div class="clear"></div>
+<!-- First Latest Products Slide -->
+<div class="recslide1">
+  <div style="font-size: 25px; text-align: center;">
+    <span style="border-bottom: 3px solid #7fad39;">Latest  Product</span>
+  </div>
+
+  <div class="recslide1a">
+    
+<div class="slideshow-container">
+
+<div class="smySlides sfade">
+   <div style="height: 100px; width: 100%; margin: 10px 0px 30px 0px;">
+    <img class="simg1" src="images/Screenshot_30.png" style="width: 24%; float: left;">
+     <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: left; padding-top: 30px;">Crab Pool Security</p>
+     <p style="text-align: left;">$30.00</p>
+   </div>
+
+    <div style="height: 100px; width: 100%; margin: 0px 0px 30px 0px;">
+    <img class="simg1" src="images/Screenshot_31.png" style="width: 24%; float: left;">
+     <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: left; padding-top: 30px;">Crab Pool Security</p>
+     <p style="text-align: left;">$30.00</p>
+   </div>
+
+    <div style="height: 100px; width: 100%; margin: 0px 0px 30px 0px;">
+    <img class="simg1" src="images/Screenshot_32.png" style="width: 24%; float: left;">
+     <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: left; padding-top: 30px;">Crab Pool Security</p>
+     <p style="text-align: left;">$30.00</p>
+   </div>
+</div>
+
+<div class="smySlides sfade">
+   <div style="height: 100px; width: 100%; margin: 10px 0px 30px 0px;">
+    <img class="simg1" src="images/Screenshot_30.png" style="width: 24%; float: left;">
+     <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: left; padding-top: 30px;">Crab Pool Security</p>
+     <p style="text-align: left;">$30.00</p>
+   </div>
+
+    <div style="height: 100px; width: 100%; margin: 0px 0px 30px 0px;">
+    <img class="simg1" src="images/Screenshot_31.png" style="width: 24%; float: left;">
+     <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: left; padding-top: 30px;">Crab Pool Security</p>
+     <p style="text-align: left;">$30.00</p>
+   </div>
+
+    <div style="height: 100px; width: 100%; margin: 0px 0px 30px 0px;">
+    <img class="simg1" src="images/Screenshot_32.png" style="width: 24%; float: left;">
+     <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: left; padding-top: 30px;">Crab Pool Security</p>
+     <p style="text-align: left;">$30.00</p>
+   </div>
+</div>
+
+<div class="smySlides sfade">
+   <div style="height: 100px; width: 100%; margin: 10px 0px 30px 0px;">
+    <img class="simg1" src="images/Screenshot_30.png" style="width: 24%; float: left;">
+     <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: left; padding-top: 30px;">Crab Pool Security</p>
+     <p style="text-align: left;">$30.00</p>
+   </div>
+
+    <div style="height: 100px; width: 100%; margin: 0px 0px 30px 0px;">
+    <img class="simg1" src="images/Screenshot_31.png" style="width: 24%; float: left;">
+     <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: left; padding-top: 30px;">Crab Pool Security</p>
+     <p style="text-align: left;">$30.00</p>
+   </div>
+
+    <div style="height: 100px; width: 100%; margin: 0px 0px 30px 0px;">
+    <img class="simg1" src="images/Screenshot_32.png" style="width: 24%; float: left;">
+     <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: left; padding-top: 30px;">Crab Pool Security</p>
+     <p style="text-align: left;">$30.00</p>
+   </div>
+</div>
+
+</div>
+  </div>
+</div>
+
+<!-- Second Latest Products Slide -->
+<div class="recslide2">
+  <div style="font-size: 25px; text-align: center;">
+    <span style="border-bottom: 3px solid #7fad39;">Top Rated  Product</span>
+  </div>
+
+  <div class="recslide1b">
+    
+<div class="slideshow-container">
+
+<div class="amySlides afade">
+   <div style="height: 100px; width: 100%; margin: 10px 0px 30px 0px;">
+    <img class="aimg1" src="images/Screenshot_30.png" style="width: 24%; float: left;">
+     <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: left; padding-top: 30px;">Crab Pool Security</p>
+     <p style="text-align: left;">$30.00</p>
+   </div>
+
+    <div style="height: 100px; width: 100%; margin: 0px 0px 30px 0px;">
+    <img class="aimg1" src="images/Screenshot_31.png" style="width: 24%; float: left;">
+     <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: left; padding-top: 30px;">Crab Pool Security</p>
+     <p style="text-align: left;">$30.00</p>
+   </div>
+
+    <div style="height: 100px; width: 100%; margin: 0px 0px 30px 0px;">
+    <img class="aimg1" src="images/Screenshot_32.png" style="width: 24%; float: left;">
+     <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: left; padding-top: 30px;">Crab Pool Security</p>
+     <p style="text-align: left;">$30.00</p>
+   </div>
+</div>
+
+<div class="amySlides afade">
+   <div style="height: 100px; width: 100%; margin: 10px 0px 30px 0px;">
+    <img class="aimg1" src="images/Screenshot_30.png" style="width: 24%; float: left;">
+     <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: left; padding-top: 30px;">Crab Pool Security</p>
+     <p style="text-align: left;">$30.00</p>
+   </div>
+
+    <div style="height: 100px; width: 100%; margin: 0px 0px 30px 0px;">
+    <img class="aimg1" src="images/Screenshot_31.png" style="width: 24%; float: left;">
+     <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: left; padding-top: 30px;">Crab Pool Security</p>
+     <p style="text-align: left;">$30.00</p>
+   </div>
+
+    <div style="height: 100px; width: 100%; margin: 0px 0px 30px 0px;">
+    <img class="aimg1" src="images/Screenshot_32.png" style="width: 24%; float: left;">
+     <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: left; padding-top: 30px;">Crab Pool Security</p>
+     <p style="text-align: left;">$30.00</p>
+   </div>
+</div>
+
+<div class="amySlides afade">
+   <div style="height: 100px; width: 100%; margin: 10px 0px 30px 0px;">
+    <img class="aimg1" src="images/Screenshot_30.png" style="width: 24%; float: left;">
+     <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: left; padding-top: 30px;">Crab Pool Security</p>
+     <p style="text-align: left;">$30.00</p>
+   </div>
+
+    <div style="height: 100px; width: 100%; margin: 0px 0px 30px 0px;">
+    <img class="aimg1" src="images/Screenshot_31.png" style="width: 24%; float: left;">
+     <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: left; padding-top: 30px;">Crab Pool Security</p>
+     <p style="text-align: left;">$30.00</p>
+   </div>
+
+    <div style="height: 100px; width: 100%; margin: 0px 0px 30px 0px;">
+    <img class="aimg1" src="images/Screenshot_32.png" style="width: 24%; float: left;">
+     <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: left; padding-top: 30px;">Crab Pool Security</p>
+     <p style="text-align: left;">$30.00</p>
+   </div>
+</div>
+
+</div>
+  </div>
+</div>
+
+<!-- Third Latest Products Slide -->
+<div class="recslide3">
+  <div style="font-size: 25px; text-align: center;"><span style="border-bottom: 3px solid #7fad39;">Review  Product</span>
+  </div>
+
+  <div class="recslide1c">
+    
+<div class="slideshow-container">
+
+<div class="dmySlides sfade">
+   <div style="height: 100px; width: 100%; margin: 10px 0px 30px 0px;">
+    <img class="dimg1" src="images/Screenshot_30.png" style="width: 24%; float: left;">
+     <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: left; padding-top: 30px;">Crab Pool Security</p>
+     <p style="text-align: left;">$30.00</p>
+   </div>
+
+    <div style="height: 100px; width: 100%; margin: 0px 0px 30px 0px;">
+    <img class="dimg1" src="images/Screenshot_31.png" style="width: 24%; float: left;">
+     <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: left; padding-top: 30px;">Crab Pool Security</p>
+     <p style="text-align: left;">$30.00</p>
+   </div>
+
+    <div style="height: 100px; width: 100%; margin: 0px 0px 30px 0px;">
+    <img class="dimg1" src="images/Screenshot_32.png" style="width: 24%; float: left;">
+     <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: left; padding-top: 30px;">Crab Pool Security</p>
+     <p style="text-align: left;">$30.00</p>
+   </div>
+</div>
+
+<div class="dmySlides sfade">
+   <div style="height: 100px; width: 100%; margin: 10px 0px 30px 0px;">
+    <img class="dimg1" src="images/Screenshot_30.png" style="width: 24%; float: left;">
+     <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: left; padding-top: 30px;">Crab Pool Security</p>
+     <p style="text-align: left;">$30.00</p>
+   </div>
+
+    <div style="height: 100px; width: 100%; margin: 0px 0px 30px 0px;">
+    <img class="dimg1" src="images/Screenshot_31.png" style="width: 24%; float: left;">
+     <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: left; padding-top: 30px;">Crab Pool Security</p>
+     <p style="text-align: left;">$30.00</p>
+   </div>
+
+    <div style="height: 100px; width: 100%; margin: 0px 0px 30px 0px;">
+    <img class="dimg1" src="images/Screenshot_32.png" style="width: 24%; float: left;">
+     <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: left; padding-top: 30px;">Crab Pool Security</p>
+     <p style="text-align: left;">$30.00</p>
+   </div>
+</div>
+
+<div class="dmySlides sfade">
+   <div style="height: 100px; width: 100%; margin: 10px 0px 30px 0px;">
+    <img class="dimg1" src="images/Screenshot_30.png" style="width: 24%; float: left;">
+     <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: left; padding-top: 30px;">Crab Pool Security</p>
+     <p style="text-align: left;">$30.00</p>
+   </div>
+
+    <div style="height: 100px; width: 100%; margin: 0px 0px 30px 0px;">
+    <img class="dimg1" src="images/Screenshot_31.png" style="width: 24%; float: left;">
+     <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: left; padding-top: 30px;">Crab Pool Security</p>
+     <p style="text-align: left;">$30.00</p>
+   </div>
+
+    <div style="height: 100px; width: 100%; margin: 0px 0px 30px 0px;">
+    <img class="dimg1" src="images/Screenshot_32.png" style="width: 24%; float: left;">
+     <p style="font-family: cursive; font-weight: bolder; font-size: 15px; text-align: left; padding-top: 30px;">Crab Pool Security</p>
+     <p style="text-align: left;">$30.00</p>
+   </div>
+</div>
+
+</div>
+  </div>
+</div>
+
+<div class="clear"></div>
+<!-- First Latest Products Slide -->
+<script>
+var sslideIndex = 0;
+sshowSlides();
+
+function sshowSlides() {
+  var i;
+  var slides = document.getElementsByClassName("smySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  sslideIndex++;
+  if (sslideIndex > slides.length) {sslideIndex = 1}    
+  
+  slides[sslideIndex-1].style.display = "block";  
+  setTimeout(sshowSlides, 4000);
+}
+</script>
+
+<!-- Second Latest Products Slide -->
+<script>
+var aslideIndex = 0;
+ashowSlides();
+
+function ashowSlides() {
+  var i;
+  var slides = document.getElementsByClassName("amySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  aslideIndex++;
+  if (aslideIndex > slides.length) {aslideIndex = 1}    
+  
+  slides[aslideIndex-1].style.display = "block";  
+  setTimeout(ashowSlides, 4000);
+}
+</script>
+
+<!-- Third Latest Products Slide -->
+<script>
+var dslideIndex = 0;
+dshowSlides();
+
+function dshowSlides() {
+  var i;
+  var slides = document.getElementsByClassName("dmySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  dslideIndex++;
+  if (dslideIndex > slides.length) {dslideIndex = 1}    
+  
+  slides[dslideIndex-1].style.display = "block";  
+  setTimeout(dshowSlides, 4000);
+}
+</script>
+
+<h1 style="font-family: fantasy; letter-spacing: 1px; font-size: 30px; text-align: center;">From The Blog</h1>
+<div class="boxA">
+  <div class="boximg1">
+    <img src="images/Screenshot_16.png">
+  </div>
+  <div class="boxA1">
+   <p style="font-family: cursive; font-weight: bolder; font-size: 15px; color: dimgrey;"><i class="fa fa-calendar-o" style="margin: 0px 5px 0px 0px;"></i>May, 4 2019<i class="fa fa-comment-o" style="margin: 0px 0px 0px 20px;"></i> 5</p>
+    <a href="" style="text-decoration: none; color: black;"><span style="font-size: 20px; word-spacing: 2px;">Cooking tips make cooking simple</span></a>
+    <p style="font-family: cursive; font-weight: bolder; font-size: 15px; color: dimgrey;">Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat</p>
+  </div>
+</div>
+
+<div class="boxB">
+  <div class="boximg2">
+    <img src="images/Screenshot_17.png">
+  </div>
+  <div class="boxB1">
+     <p style="font-family: cursive; font-weight: bolder; font-size: 15px; color: dimgrey;"><i class="fa fa-calendar-o" style="margin: 0px 5px 0px 0px;"></i>May, 4 2019<i class="fa fa-comment-o" style="margin: 0px 0px 0px 20px;"></i> 5</p>
+    <a href="" style="text-decoration: none; color: black;"><span style="font-size: 20px; word-spacing: 2px;">6 ways to prepare breakfast for 30</span></a>
+    <p style="font-family: cursive; font-weight: bolder; font-size: 15px; color: dimgrey;">Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat</p>
+  </div>
+</div>
+
+<div class="boxC">
+  <div class="boximg3">
+    <img src="images/Screenshot_18.png">
+  </div>
+  <div class="boxC1">
+     <p style="font-family: cursive; font-weight: bolder; font-size: 15px; color: dimgrey;"><i class="fa fa-calendar-o" style="margin: 0px 5px 0px 0px;"></i>May, 4 2019<i class="fa fa-comment-o" style="margin: 0px 0px 0px 20px;"></i> 5</p>
+    <a href="" style="text-decoration: none; color: black;"><span style="font-size: 20px; word-spacing: 2px;">Visit the clean farm in the US</span></a>
+    <p style="font-family: cursive; font-weight: bolder; font-size: 15px; color: dimgrey;">Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat</p>
+  </div>
+</div>
+
+<div class="clear"></div>
+
+
+
+<footer class="footer">
+  <div class="box1">
+    <a href="index.html"><img src="images/logo.png"></a>
+    <p>Address: 60-49 Road 11378 New York</p>
+    <p>Phone: +65 11.188.888</p>
+    <p>Email: christozaipha69@gmail.com</p>
+  </div>
+
+  <div class="box2">
+    <p style="margin-left: 0px; font-family: fantasy; font-weight: lighter; font-size: 20px;">Useful Links</p>
+    <div class="box2a">
+      <ol style="list-style-type: none; margin-left: -18%;">
+      <li><a style="text-decoration: none; color: black;" href="about.html">About our shop</a></li>
+      <li><a style="text-decoration: none; color: black;" href="faq.html">FAQs</a></li>
+      <li><a style="text-decoration: none; color: black;" href="conditions.html">Terms & Conditions</a></li>
+      <li><a style="text-decoration: none; color: black;" href="policy.html">Privacy policy</a></li>
+      <li><a style="text-decoration: none; color: black;" href="services.html">Services</a></li>
+    </ol>
+    </div>
+    <div class="box2b">
+      <ol style="list-style-type: none; margin-left: -18%;">
+      <li><a style="text-decoration: none; color: black;" href="buyer.html">Buyer's Safety</a></li>
+      <li><a style="text-decoration: none; color: black;" href="track.html">Track Your Order</a></li>
+      <li><a style="text-decoration: none; color: black;" href="contact.html">Contact</a></li>
+      <li><a style="text-decoration: none; color: black;" href="join.html">Join Us</a></li>
+    </ol>
+    </div>  
+  </div>
+
+ <div class="box3">
+    <p style="font-family: fantasy; font-weight: lighter; font-size: 20px;">Join Our Newsletter Now</p>
+    <p>Get E-mail updates about our latest shop and special offers.</p>
+    <input style="height: 40px; font-family: cursive; font-size: 15px; font-weight: bolder; width: 80%; border: 0.5px solid grey; padding-left: 20px; float: left;" type="text"placeholder="Enter your mail"><button style="height: 40px; font-family: fantasy; color: white; background-color: #7fad39; border: none; float: left;">SUBSCRIBE</button>
+
+    <div class="clear"></div>
+    
+    <a style="text-decoration: none; color: black;" href=""><div class="box3a"><i class="fa fa-facebook"></i></div></a>
+    <a style="text-decoration: none; color: black;" href=""><div class="box3a"><i class="fa fa-instagram"></i></div></a>
+    <a style="text-decoration: none; color: black;" href=""><div class="box3a"><i class="fa fa-twitter"></i></div></a>
+    <a style="text-decoration: none; color: black;" href=""><div class="box3a"><i class="fa fa-pinterest"></i></div></a>
+  </div>
+ <div class="clear"></div>
+
+ <div class="box4">
+   <h4>Copyright @ NNAMDI CHRISTUS - 9th Septemper, 2021. All rights reserved.</h4>
+ </div>
+</footer>
+</body>
+
+</html>
